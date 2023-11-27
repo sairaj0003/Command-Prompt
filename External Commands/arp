@@ -1,0 +1,25 @@
+The arp command in the command prompt is used to display and manage the Address Resolution Protocol (ARP) cache, which is a table that maps IP addresses to physical (MAC) addresses on a local network. Here are the details:
+
+    Use: The arp command is used for viewing and manipulating the ARP cache.
+
+    Syntax: The basic syntax is:
+        arp [-a] [-g] [-d] [-n [inet_addr]] [-s [inet_addr eth_addr]] [-d [inet_addr]] [-?]
+
+        -a: Displays the ARP table.
+        -g: Same as -a.
+        -d: Deletes an entry specified by the inet_addr.
+        -n: Displays numerical addresses instead of resolving names.
+        -s: Adds a static ARP entry.
+        -?: Displays help information.
+
+    Example:
+        Display ARP table:
+            arp -a
+
+        Add a static ARP entry:
+            arp -s 192.168.1.1 00-11-22-33-44-55
+
+        Delete an ARP entry:
+            arp -d 192.168.1.1
+
+        These examples assume a local network and provide basic usage of the arp command. Adjust the IP addresses and MAC addresses according to your network configuration.
