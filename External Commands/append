@@ -1,0 +1,10 @@
+The "append" command in the context of the command prompt in Windows is not a standalone command. However, if you're referring to the ">>" operator, it is used for appending output to a file. Here's the information:
+
+    Use: The ">>" operator is used to append the output of a command to the end of a file without overwriting the existing content.
+
+    Syntax: The basic syntax is:
+        command >> filename
+
+    Example:
+        echo "This is a new line" >> example.txt
+        This example appends the text "This is a new line" to the file named "example.txt". If the file doesn't exist, it will be created. If it exists, the text will be added to the end of the file.
