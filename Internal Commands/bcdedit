@@ -1,0 +1,27 @@
+The bcdedit command is a powerful tool in Windows used for managing the Boot Configuration Data (BCD) store. The BCD store contains boot configuration parameters and controls how the operating system is started in Windows Vista, Windows 7, Windows 8, and later versions.
+Here are some details about the bcdedit command:
+
+    Use: The bcdedit command is used to view and make changes to the BCD store. It allows you to configure various boot-related settings, including the default operating system, boot menu timeout, boot parameters, and more.
+
+    Syntax:
+        bcdedit [/option] [argument]
+
+        Common options include:
+        /enum: Displays the current entries in the BCD store.
+        /create: Creates a new boot entry.
+        /delete: Deletes a boot entry.
+        /set: Sets a boot entry option value.
+        /timeout: Sets the time, in seconds, that the boot manager waits for user input.
+        /default: Sets the default boot entry.
+
+    Example:
+        bcdedit /enum
+
+        This example displays the current entries in the BCD store, including information about the operating systems configured for boot.
+
+    Additional Information:
+        Running bcdedit without any options will display the current configuration.
+        Changes made with bcdedit can have a significant impact on the system's ability to boot, so use it with caution.
+        Elevated privileges (Run as Administrator) are often required to use bcdedit to modify the BCD store.
+
+Common use cases for bcdedit include modifying the boot menu, setting the default operating system, and configuring advanced boot options. It's a tool often used in troubleshooting and system customization.
