@@ -1,0 +1,21 @@
+The at command in the Windows command prompt is used to schedule commands and programs to run at a specified date and time. Here are the details:
+
+    Use: The at command allows you to schedule tasks to run in the background at a specified time.
+
+    Syntax:
+        at [\\computername] [ [id] [/delete] | /delete /yes]
+
+        \\computername: Specifies a remote computer. If this parameter is omitted, the tasks on the local computer are displayed.
+        [id]: Specifies the identification number assigned to a scheduled task.
+        /delete: Cancels a scheduled task.
+        /yes: Used with /delete to delete all scheduled tasks on the computer.
+
+    Example:
+        at 15:30 /every:M,T,W,Th,F "notepad.exe"
+
+        This example schedules the Notepad application (notepad.exe) to run every weekday at 3:30 PM.
+        
+    Additional Information:
+        The at command allows you to schedule a command or program to run once at a specific time or repeatedly on specific days of the week.
+        The scheduled tasks created with at are managed by the Task Scheduler service.
+        You need to have the "Task Scheduler" service running to use the at command.
