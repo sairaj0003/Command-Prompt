@@ -1,0 +1,26 @@
+The cacls command in Windows is used to display or modify access control lists (ACLs) for files and directories. ACLs determine the permissions that users and groups have on a particular object. Here are the details:
+
+    Use: The cacls command is used to view or modify the ACLs for files and directories.
+
+    Syntax:
+        cacls FileName [/T] [/E] [/C] [/G user:perm] [/R user [...]] [/P user:perm [...]] [/D user [...]]
+
+        FileName: Specifies the file or directory for which you want to display or modify the ACL.
+        /T: Processes matching files in the current directory and all of its subdirectories.
+        /E: Edits the ACL instead of replacing it.
+        /C: Continues to process even if errors occur.
+        /G user:perm: Grants specified permissions to the specified user.
+        /R user: Removes the specified user's access rights.
+        /P user:perm: Replaces the user's access rights with those specified.
+        /D user: Denies the specified user access to the file or directory.
+
+    Example:
+        cacls C:\Example /E /G John:F
+
+        This example edits the ACL of the "C:\Example" directory, granting the user "John" full control (F).
+
+    Additional Information:
+        The cacls command has been deprecated in more recent versions of Windows, and the icacls command is recommended for more advanced functionality.
+        icacls provides more features and flexibility compared to cacls and is available on Windows Vista and later versions.
+
+Always exercise caution when modifying ACLs, as incorrect settings can lead to unintended security issues or loss of access to files and directories.
