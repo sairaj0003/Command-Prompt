@@ -1,0 +1,18 @@
+The assoc command in the Windows command prompt is used to display or modify file name extension associations. Here are the details:
+
+    Use: The assoc command is used to view or change the file extension associations on a system.
+
+    Syntax:
+        assoc [.ext=[fileType]]
+
+        .ext: Specifies the file extension.
+        fileType: Specifies the file type to associate with the specified file extension.
+
+    Example:
+        assoc .txt=txtfile
+
+        This example associates the file extension .txt with the file type txtfile. After running this command, double-clicking a .txt file would open it with the default program associated with the txtfile file type.
+    Additional Information:
+        To view the current file associations, you can run assoc without any arguments: assoc.
+        To remove a file association, you can use the assoc command with the file extension followed by nothing. For example: assoc .txt=.
+        Changing file associations can impact how files are opened and processed by default applications.
