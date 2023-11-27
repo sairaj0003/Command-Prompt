@@ -1,0 +1,23 @@
+The attrib command in the Windows command prompt is used to display or change the attributes of a file or directory. Here are the details:
+
+    Use: The attrib command is used to display or change the attributes of a file or directory. File attributes include read-only, archive, system, and hidden attributes.
+
+    Syntax:
+        attrib [+R | -R] [+A | -A] [+S | -S] [+H | -H] [drive:][path][filename] [/S [/D]]
+    
+        +R / -R: Sets or clears the read-only attribute.
+        +A / -A: Sets or clears the archive attribute.
+        +S / -S: Sets or clears the system attribute.
+        +H / -H: Sets or clears the hidden attribute.
+        [drive:][path][filename]: Specifies the file or directory.
+        /S: Applies attrib and any command-line options to matching files in the current directory and all of its subdirectories.
+        /D: Applies attrib and any command-line options to directories as well.
+
+    Example:
+        attrib +R -S C:\example.txt
+
+        This example sets the read-only attribute and clears the system attribute for the file "example.txt" located at "C:".
+
+    Additional Information:
+        Use caution when modifying file attributes, especially the system and read-only attributes, as it can affect how the operating system handles files.
+        The /S and /D options are used for applying attrib changes recursively to files in subdirectories.
