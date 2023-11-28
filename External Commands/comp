@@ -1,0 +1,26 @@
+The comp command in the Windows Command Prompt is used to compare the contents of two files or sets of files. Here are the details:
+
+    Use: The comp command is used to compare the contents of two files or sets of files and displays the differences between them.
+
+    Syntax:
+        comp [data1] [data2] [/D] [/A] [/L] [/N=number] [/C] [/OFF[LINE]]
+
+        [data1] and [data2]: Specifies the location and name of the files to be compared.
+        /D: Displays differences in decimal format.
+        /A: Displays differences in ASCII characters.
+        /L: Displays the line numbers for differences.
+        /N=number: Compares the first specified number of lines of each file.
+        /C: Disregards case (compares in case-insensitive mode).
+        /OFF[LINE]: Do not display the first few lines of the files before comparing.
+
+    Example:
+        comp file1.txt file2.txt
+
+        This example compares the contents of "file1.txt" and "file2.txt" and displays the differences.
+
+    Additional Information:
+        The comp command is useful for quickly identifying differences between two text files.
+        It shows the location and values of the first few differences it encounters.
+        This command is suitable for comparing small to moderately sized text files. For larger files or more advanced comparison needs, specialized tools might be preferred.
+
+Remember that comp is primarily designed for text file comparison. If you need to compare binary files or require more advanced comparison features, you might want to consider using other tools or commands.
