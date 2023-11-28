@@ -1,0 +1,20 @@
+The chdir command is an alternative name for the cd command in the Windows command prompt. Both cd and chdir are used to change the current working directory.
+Here are the details:
+
+    Use: The chdir command, just like the cd command, is used to change the current working directory.
+
+    Syntax:
+        chdir [drive:][path]
+
+        [drive:][path]: Specifies the drive and directory to change to. If only the drive is specified, it changes the current drive without changing the directory.
+
+    Example:
+        chdir C:\Example
+
+        This example changes the current working directory to "C:\Example."
+
+    Additional Information:
+        In Windows command prompt, chdir and cd are interchangeable; both can be used to achieve the same result of changing the current working directory.
+        The /D option can be used with chdir (or cd) to change both the current drive and the current directory, like this: chdir /D D:\AnotherExample.
+
+The primary use of chdir is to change directories, and it serves the same purpose as the cd command in the Windows command prompt.
