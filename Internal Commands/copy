@@ -1,0 +1,30 @@
+The copy command in the Windows Command Prompt is used to copy one or more files from one location to another. It allows you to duplicate files or directories.
+Here are the details:
+
+    Use: The copy command is used to copy files or directories from one location to another.
+
+    Syntax:
+        copy [/D] [/V] [/N] [/Y | /-Y] [/Z] [/A | /B ] source [/A | /B] [+ source [/A | /B] [+ ...]] [destination [/A | /B]]
+
+        /D: Allow the destination file to be created decrypted.
+        /V: Verifies that new files are written correctly.
+        /N: Uses short file names, if available, when copying a file with a non-8dot3 name.
+        /Y: Suppresses prompting to confirm you want to overwrite an existing destination file.
+        /-Y: Prompts you to confirm you want to overwrite an existing destination file.
+        /Z: Copies networked files in restartable mode.
+        /A: Indicates an ASCII text file.
+        /B: Indicates a binary file.
+        source: Specifies the file or files to be copied.
+        destination: Specifies the directory and/or filename for the new file(s).
+
+    Example:
+        copy C:\Example\file.txt D:\Backup\
+    
+        This example copies the file "file.txt" from the "C:\Example" directory to the "D:\Backup" directory.
+
+    Additional Information:
+        If the destination is not specified, the copy command will assume the current directory.
+        You can use wildcards (* and ?) to copy multiple files matching a pattern.
+        To copy entire directories with their contents, you can use the xcopy command.
+
+The copy command is a fundamental tool for file management in the Windows Command Prompt, allowing you to duplicate files easily.
