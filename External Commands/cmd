@@ -1,0 +1,19 @@
+The cmd command in Windows is used to start a new instance of the Windows command prompt. When executed, it opens a new command prompt window, allowing you to enter and execute commands.
+Here are the details:
+
+    Use: The cmd command is used to launch a new instance of the Windows command prompt.
+
+    Syntax:
+        cmd
+
+    Example:
+        cmd
+
+        Running this command opens a new command prompt window.
+
+    Additional Information:
+        When you run cmd, it opens a new command prompt window with a fresh environment.
+        This command is often used when you want to open a new command prompt window, especially if you are running commands from within an existing command prompt.
+        The cmd command also has various options and switches that can be used for customization, such as specifying startup parameters.
+
+Using the cmd command is a quick way to open a new command prompt instance, and it is frequently used by users who work with the command line in Windows.
