@@ -1,0 +1,27 @@
+The compact command in the Windows Command Prompt is used to display or change the compression state of files or directories on an NTFS file system. It is used to compress or uncompress files and directories to save disk space.
+Here are the details:
+
+    Use: The compact command is used to display or change the compression state of files or directories.
+
+    Syntax:
+        compact [/C | /U] [/S[:dir]] [/A] [/I] [/F] [/Q] [filename [...]]
+
+        /C: Compresses the specified files.
+        /U: Uncompresses the specified files.
+        /S[:dir]: Performs the operation on files in the specified directory and its subdirectories. If dir is not specified, the current directory is used.
+        /A: Displays files with the hidden or system attributes. By default, these files are not displayed.
+        /I: Ignores errors.
+        /F: Forces the compression or uncompression of files.
+        /Q: Reports only the most essential information.
+
+    Example:
+        compact /C /S:C:\Example
+
+        This example compresses all files in the "C:\Example" directory and its subdirectories.
+
+    Additional Information:
+        Compression is available on NTFS file systems, and compressed files are indicated by blue text in the Command Prompt.
+        Compressing files can save disk space but might result in slower access times for compressed files.
+        The /F option is often used to forcefully compress files, especially those that are marked as read-only.
+
+Using the compact command is one way to manage file and directory compression on Windows systems. Always be cautious when compressing system files or files that are actively in use.
