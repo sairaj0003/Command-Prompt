@@ -1,0 +1,44 @@
+The choice command in the Windows command prompt is used to prompt the user to make a choice between one or more options. It's commonly used in batch scripts to create simple interactive menus.
+Here are the details:
+
+    Use: The choice command is used to prompt the user for a key press to make a choice.
+
+    Syntax:
+        choice [/C choices] [/N] [/S] [/T timeout /D choice] [/M text]
+
+        /C choices: Specifies a list of one or more characters, separated by commas, for the user to choose from.
+        /N: Makes the input choice case-sensitive.
+        /S: Causes the choice to be hidden.
+        /T timeout: Specifies the number of seconds to pause before the default choice is selected.
+        /D choice: Specifies the default choice after timeout seconds.
+        /M text: Specifies the text to display as the prompt.
+
+    Example:
+        choice /C 123 /M "Choose a number:"
+        if errorlevel 3 goto Three
+        if errorlevel 2 goto Two
+        if errorlevel 1 goto One
+        goto End
+    
+        :One
+        echo You chose One
+        goto End
+    
+        :Two
+        echo You chose Two
+        goto End
+    
+        :Three
+        echo You chose Three
+        goto End
+    
+        :End
+
+        In this example, the user is prompted to choose a number from 1 to 3. Depending on the choice, the script jumps to the corresponding label.
+
+    Additional Information:
+        The choice command is limited in terms of customizing the appearance of the menu.
+        The errorlevel values indicate which option the user selected. These values are used in an if errorlevel structure to determine the chosen option.
+        The /C option is used to define the valid choices.
+
+While choice provides a basic way to create menus in batch scripts, for more advanced and flexible menu options, PowerShell or other scripting languages might be preferred.
