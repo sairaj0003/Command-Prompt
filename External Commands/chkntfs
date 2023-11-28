@@ -1,0 +1,24 @@
+The chkntfs command in the Windows command prompt is used to display or modify the checking of the disk drive during the system startup process. It is primarily associated with the NTFS file system.
+Here are the details:
+
+    Use: The chkntfs command is used to display or modify the automatic disk checking of the NTFS file system during system startup.
+
+    Syntax:
+        chkntfs [/D] [/T[:time]] [/X[:time]] [/C] [/L[:size]]
+
+        /D: Restores the machine to the default behavior of checking both specified drives on the machine and any removable media drives.
+        /T[:time]: Specifies the wait time before the disk check starts. If time is not specified, the default is 10 seconds.
+        /X[:time]: Forces a dismount of the volume if the dirty bit is set. If time is not specified, the default is 60 seconds.
+        /C: Skips the checking of cycles within the folder structure.
+        /L[:size]: Performs a less rigorous check of index entries (useful for faster checking). If size is specified, it sets the log file size.
+
+    Example:
+        chkntfs C: /X:5
+
+        This example sets the wait time to 5 seconds before starting the disk check and forces a dismount of the C: drive if the dirty bit is set.
+
+    Additional Information:
+        The /D option restores the default behavior, which is to check both specified drives on the machine and any removable media drives during system startup.
+        The /X option is often used to shorten the time the system spends on automatic disk checking during startup.
+
+chkntfs is typically used for managing the automatic disk checking behavior on NTFS volumes. It can be useful for configuring the system to skip or customize the disk checking process during startup.
