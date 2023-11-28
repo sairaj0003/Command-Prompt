@@ -1,0 +1,27 @@
+The call command in the Windows command prompt is used to run a script or batch program from within another script or batch program. It's often used to invoke another batch file or script and then return to the original script after the called script has completed.
+Here's some information about the call command:
+
+    Use: The call command is used to execute another script or batch program and return control to the calling script.
+
+    Syntax:
+        call [drive:][path]filename [args]
+
+        [drive:][path]filename: Specifies the batch script or program to be called.
+        [args]: Specifies any command-line arguments to be passed to the batch script or program.
+
+    Example:
+        call another_script.bat
+
+        In this example, the call command is used to invoke the batch script named "another_script.bat."
+
+    Additional Information:
+        When a batch file calls another batch file using the call command, control is transferred to the called batch file, and when the called batch file finishes, control returns to the original batch file.
+        Without using call, if one batch file calls another, the control doesn't return to the original batch file after the called batch file completes.
+
+    Here's a simple example to illustrate the difference:
+        @echo off
+        echo This is the main batch file
+        call another_script.bat
+        echo Back in the main batch file
+
+        In this example, "another_script.bat" is called using call, and control returns to the main batch file after "another_script.bat" completes.
