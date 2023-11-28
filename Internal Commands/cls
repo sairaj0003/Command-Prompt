@@ -1,0 +1,19 @@
+The cls command in the Windows command prompt is used to clear the screen, removing all previously executed commands and their output, making the console window blank.
+Here are the details:
+
+    Use: The cls command is used to clear the contents of the console screen.
+
+    Syntax:
+        cls
+
+    Example:
+        echo Hello, World!
+        cls
+    
+        In this example, the echo command prints "Hello, World!" to the console, and then cls is used to clear the screen.
+
+    Additional Information:
+        The cls command does not take any arguments.
+        It is commonly used in batch files or scripts to provide a clean and organized console display.
+
+When working with the command prompt or writing batch scripts, using cls can help improve the readability of the console output by keeping the display uncluttered.
