@@ -1,0 +1,26 @@
+The date command in the Windows Command Prompt is used to display or set the current date of the system. It allows users to view the current date or change it if necessary.
+Here are the details:
+
+    Use: The date command is used to display or set the current date of the system.
+
+    Syntax:
+        date [/T | date]
+
+        /T: Displays the current date without prompting to set it.
+        date: Prompts the user to set the date.
+
+    Example:
+        date
+
+        This example displays the current date.
+
+        date 11/27/2023
+
+        This example sets the system date to November 27, 2023.
+
+    Additional Information:
+        If used without any options, the date command displays the current date and prompts the user to enter a new date if they want to change it.
+        The date format may vary depending on the regional settings of the system.
+        Changing the date might require administrative privileges.
+
+The date command is often used when you need to check or modify the system date from the command prompt. It's a simple utility for basic date-related operations on the command line.
