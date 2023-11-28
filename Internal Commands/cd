@@ -1,0 +1,18 @@
+The cd command in the Windows command prompt (cmd) is used to change the current working directory. It is also available in Unix-based systems (Linux, macOS) and the command prompt in those environments.
+Here are the details:
+
+    Use: The cd command is used to change the current working directory.
+
+    Syntax:
+        cd [drive:][path]
+
+        [drive:][path]: Specifies the drive and directory to change to. If only the drive is specified, it changes the current drive without changing the directory.
+
+    Example:
+        cd C:\Example
+
+        This example changes the current working directory to "C:\Example."
+
+    Additional Information:
+        Using cd without any arguments will switch to the user's home directory.
+        The /D option can be used to change both the current drive and the current directory, like this: cd /D D:\AnotherExample.
