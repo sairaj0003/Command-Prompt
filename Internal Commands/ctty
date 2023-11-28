@@ -1,0 +1,21 @@
+The ctty command in the Windows Command Prompt is used to change the console input and output devices. It is an internal command.
+Here are the details:
+
+    Use: The ctty command is used to change the console input and output devices.
+
+    Syntax:
+        ctty [device]
+
+        device: Specifies the device to use as the console input and output.
+
+    Example:
+        ctty com1
+    
+        This example sets the console input and output to the COM1 serial port.
+
+    Additional Information:
+        The ctty command is used less frequently in modern Windows environments.
+        It is more commonly used in legacy systems or scripts that need to redirect console input and output.
+        The default console device is typically the screen and keyboard.
+
+Please note that changing the console input and output devices using ctty may have implications for how input and output are handled in the command prompt, and it's generally not commonly used in regular day-to-day operations on modern Windows systems.
