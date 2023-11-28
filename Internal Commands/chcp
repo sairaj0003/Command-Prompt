@@ -1,0 +1,18 @@
+The chcp command in the Windows command prompt is used to change the active code page of the console. The code page determines how character strings are converted between numeric codes and the characters they represent.
+Here are the details:
+
+    Use: The chcp command is used to change the active code page of the console window.
+
+    Syntax:
+        chcp [nnn]
+
+        nnn: Specifies the code page number to set. If no code page number is specified, chcp displays the active code page.
+
+    Example:
+        chcp 1252
+
+        This example sets the code page to 1252, which is commonly used for Western European languages.
+
+    Additional Information:
+        Different code pages support different sets of characters, and changing the code page may affect how characters are displayed in the console.
+        Common code pages include 437 (United States), 1252 (Western Europe), and 65001 (UTF-8).
