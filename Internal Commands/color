@@ -1,0 +1,43 @@
+The color command in the Windows command prompt is used to change the foreground and background colors of the console window. It allows you to customize the appearance of the command prompt.
+Here are the details:
+
+    Use: The color command is used to set the text and background colors of the console window.
+
+    Syntax:
+        color [background][foreground]
+    
+        background: Specifies the background color.
+        foreground: Specifies the foreground (text) color.
+
+        The color values are specified using hexadecimal digits: 0, 1, 2, ..., 9, A, B, C, D, E, F.
+
+    Example:
+        color 0A
+
+        This example sets the background color to black (0) and the foreground color to light green (A).
+
+    Additional Information:
+        You can use the color command without any arguments to display the current console color settings.
+        The color values are a combination of two hexadecimal digits, where the first digit represents the background color, and the second digit represents the foreground color.
+        The color settings will persist until the command prompt window is closed.
+
+    Here's a quick reference for the color codes:
+    
+        0 = Black
+        1 = Blue
+        2 = Green
+        3 = Aqua
+        4 = Red
+        5 = Purple
+        6 = Yellow
+        7 = White
+        8 = Gray
+        9 = Light Blue
+        A = Light Green
+        B = Light Aqua
+        C = Light Red
+        D = Light Purple
+        E = Light Yellow
+        F = Bright White
+
+The color command is often used for customization and personalization of the command prompt environment.
