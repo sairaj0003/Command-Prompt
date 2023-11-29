@@ -1,0 +1,21 @@
+The diskcomp command in the Windows Command Prompt is used to compare the contents of two floppy disks or hard drives. It was traditionally used for checking whether two disks are identical.
+Here are the details:
+
+    Use: The diskcomp command is used to compare the contents of two floppy disks or hard drives.
+
+    Syntax:
+        diskcomp [drive1:][path1] drive2:][path2]
+
+        [drive1:][path1]: Specifies the location of the first disk or directory.
+        [drive2:][path2]: Specifies the location of the second disk or directory.
+
+    Example:
+        diskcomp A: B:
+    
+        This example compares the contents of the floppy disks in drive A: and B:.
+
+    Additional Information:
+        diskcomp is not commonly used in modern Windows environments, as floppy disks are no longer the primary means of data storage.
+        It was more relevant in the era of floppy disk usage for personal computers.
+
+While diskcomp may still be available in some versions of Windows for compatibility reasons, it's worth noting that it's not commonly used today. Modern storage and file management practices often rely on more advanced tools and technologies.
