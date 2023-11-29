@@ -1,0 +1,24 @@
+The for command in the Windows Command Prompt is used to run a specified command for each file in a set of files. It is commonly used in batch scripts for iterating over files, performing operations on them, and processing data.
+Here are the details:
+
+    Use: The for command is used for looping through files or sets of files.
+
+    Syntax:
+        for %variable in (set) do command [command-parameters]
+    
+        %variable: A single character to replace the variable in the command.
+        (set): A set of one or more files, separated by spaces, commas, or semicolons.
+        do command: The command to be executed for each file in the set.
+        [command-parameters]: Additional parameters to be passed to the command.
+
+    Example:
+        for %f in (*.txt) do type "%f"
+    
+        This example prints the content of each .txt file in the current directory.
+
+    Additional Information:
+        The for command is versatile and supports various options for file iteration, including wildcards and different file selection criteria.
+        It can also be used for looping through a range of numbers or executing commands based on the output of other commands.
+        When used in a batch script, double percent signs (%%) are used for variables, but when used directly in the Command Prompt, a single percent sign (%) is used.
+
+For more details and options, you can use the for /? command in the Command Prompt to see the help information. The for command is a powerful tool for automating tasks involving files and data processing in a Windows environment.
