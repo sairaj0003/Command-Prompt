@@ -1,0 +1,30 @@
+The driverquery command is a Windows Command Prompt command that provides information about installed drivers on a Windows system. It displays a list of all installed device drivers and their properties.
+Here are the details:
+
+    Use: The driverquery command is used to display a list of installed device drivers and their properties.
+
+    Syntax:
+        driverquery [/v] [/fo format] [/nh] [/si] [/sq] [/rq]
+    
+        /v: Provides detailed information about each driver.
+        /fo format: Specifies the output format (table, list, or CSV).
+        /nh: Suppresses column headers in the output.
+        /si: Displays digital signature information.
+        /sq: Displays only signed drivers.
+        /rq: Displays only required drivers.
+
+    Example:
+        driverquery /v /fo table
+
+        This example displays detailed information about installed drivers in a table format.
+
+    Additional Information:
+        Running driverquery without any options provides a basic list of installed drivers.
+        This command is useful for gathering information about installed drivers for troubleshooting or system analysis.
+        Administrative privileges are often required to run driverquery.
+
+        driverquery /v /fo csv > drivers.csv
+
+        This example exports detailed driver information to a CSV file named "drivers.csv."
+
+The driverquery command is commonly used by system administrators and users who need to gather information about installed drivers on a Windows system.
