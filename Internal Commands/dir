@@ -1,0 +1,35 @@
+The dir command in the Windows Command Prompt is used to display a list of files and subdirectories in a directory. It provides information about the contents of a specified directory.
+Here are the details:
+
+    Use: The dir command is used to list the files and directories in a specified location.
+
+    Syntax:
+        dir [drive:][path][filename] [/p] [/w] [/a[[:]attributes]] [/o[[:]sortorder]] [/s] [/b] [/l] [/q] [/c] [/n] [/x] [/-n]
+
+        [drive:][path][filename]: Specifies the location and name of the files to list.
+        /p: Pauses after each screenful of information.
+        /w: Uses a wide list format.
+        /a[[:]attributes]: Displays files with the specified attributes.
+        /o[[:]sortorder]: Sorts the listing.
+        /s: Displays files in the specified directory and all its subdirectories.
+        /b: Uses bare format (no heading information or summary).
+        /l: Uses lowercase.
+        /q: Displays the owner of the file.
+        /c: Displays the thousand separator in file sizes.
+        /n: Displays the long file name in the directory.
+        /x: Displays short names generated for non-8dot3 file names.
+        /-n: Sorts by name (the default).
+
+    Example:
+        dir /p /w /a:d
+
+        This example lists all directories in the current directory, displaying them in a wide format, and pausing after each screenful.
+
+    Additional Information:
+        The dir command is a fundamental tool for navigating and inspecting the contents of directories in the command prompt.
+        Various options and filters can be used to customize the output based on different criteria.
+        The command is often used with wildcards (* and ?) to match multiple files or directories.
+          
+        dir *.txt
+
+        This example lists all files with the ".txt" extension in the current directory.
