@@ -1,0 +1,20 @@
+The fixmbr command is a Windows Command Prompt command used to write a new Master Boot Record (MBR) to the system partition. It is commonly used to fix certain types of boot problems when the MBR becomes corrupted or damaged.
+Here are the details:
+
+    Use: The fixmbr command is used to write a new MBR to the system partition.
+
+    Syntax:
+        fixmbr [device]
+    
+        [device]: Specifies the drive for which you want to write a new MBR. This is typically the drive letter of the system partition.
+
+    Example:
+        fixmbr C:
+        
+        This example writes a new MBR to the C: drive.
+
+    Additional Information:
+
+        The fixmbr command is often used in situations where the Master Boot Record is damaged or overwritten by another operating system or boot loader.
+        Running this command can help restore the ability to boot into the Windows operating system.
+        Like fixboot, it is important to use the fixmbr command with caution, and it is recommended to back up important data before attempting any repairs to the MBR.
