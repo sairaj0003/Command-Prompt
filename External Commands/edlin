@@ -1,0 +1,21 @@
+The edlin command is a text editor that was historically used in MS-DOS and some early versions of Microsoft Windows. It's a line-oriented text editor, meaning that it allows users to edit files on a line-by-line basis.
+Here are the details:
+
+    Use: The edlin command is used to launch the MS-DOS line editor, allowing users to create and edit text files.
+
+    Syntax:
+        edlin [drive:][path]filename
+    
+        [drive:][path]filename: Specifies the name and location of the file you want to edit. If the file doesn't exist, a new file with that name will be created.
+
+    Example:
+        edlin example.txt
+    
+        This example opens the MS-DOS line editor and creates or edits a file named "example.txt."
+
+    Additional Information:
+        edlin is a basic line editor and lacks the graphical user interface and features found in more modern text editors.
+        It allows users to perform basic text editing operations, such as inserting, deleting, and searching for text.
+        edlin was often used in script files and batch files in MS-DOS environments.
+
+It's important to note that the edlin command and the MS-DOS line editor are considered outdated, and more advanced text editors are used in modern computing environments. If you are working with contemporary versions of Windows, consider using a more feature-rich text editor like Notepad, Visual Studio Code, or other third-party alternatives.
