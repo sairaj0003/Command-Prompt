@@ -1,0 +1,23 @@
+The endlocal command in the Windows Command Prompt is used to end the localization of environment changes in a batch script. It is typically used in conjunction with the setlocal command to limit the scope of environment variable changes to a specific portion of the script.
+Here are the details:
+
+    Use: The endlocal command ends the localization of environment changes made within a specific block of code initiated by the setlocal command.
+
+    Syntax:
+        endlocal
+        
+        This command is usually used at the end of a block of code within a batch script.
+
+    Example:
+        @echo off
+        setlocal
+        echo This is a local environment.
+        endlocal
+        echo This is the global environment.
+
+    Additional Information:
+        When setlocal is used, it initializes a local environment, and any changes made to environment variables within that block are temporary and don't affect the global environment.
+        The endlocal command is used to terminate the local environment and revert to the global environment.
+        This mechanism is useful for preventing unintended side effects on global environment variables caused by changes within a specific portion of a script.
+
+Batch scripts often use setlocal and endlocal to create isolated environments, ensuring that changes made to environment variables within a specific script segment do not affect the overall system or other parts of the script.
