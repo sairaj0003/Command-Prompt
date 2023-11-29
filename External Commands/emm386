@@ -1,0 +1,21 @@
+The EMM386 command is a part of MS-DOS, a legacy operating system used on personal computers. It is a memory manager that provides access to the High Memory Area (HMA) and Expanded Memory Specification (EMS) memory.
+Here are the details:
+
+    Use: The EMM386 command is used to load the EMM386 memory manager, which facilitates access to additional memory beyond the conventional memory in MS-DOS.
+
+    Syntax:
+        EMM386 [option [option...]]
+
+        [option]: Various options that control the behavior of EMM386.
+
+    Example:
+        EMM386 RAM
+    
+        This example loads EMM386 with the "RAM" option, enabling it to use system RAM as expanded memory.
+
+    Additional Information:
+        EMM386 is often used in the CONFIG.SYS file of MS-DOS systems to load the memory manager during system startup.
+        It facilitates access to memory beyond the 640KB conventional memory limit, providing additional memory for applications.
+        EMM386 is part of the extended memory management utilities in MS-DOS.
+
+It's important to note that MS-DOS and its utilities, including EMM386, are considered legacy and are not used in modern operating systems. If you are dealing with older systems or legacy software, you may encounter EMM386 configurations in configuration files like CONFIG.SYS. In modern environments, memory management is handled differently, and operating systems like Windows use more advanced memory management techniques.
