@@ -1,0 +1,15 @@
+The dosshell command in the Windows Command Prompt is not a native or recognized command. However, "DOS Shell" typically refers to a graphical user interface (GUI) program used in MS-DOS to provide file management and navigation in a graphical environment.
+Here are the details:
+
+    Use: DOS Shell is a text-based file manager in a graphical interface for MS-DOS.
+
+    Availability: DOS Shell was part of MS-DOS, the operating system used in early versions of personal computers. It was included to provide users with a more user-friendly way to manage files compared to the traditional command-line interface.
+
+    Launching DOS Shell: You could access DOS Shell by entering the following command in MS-DOS:
+        dosshell
+
+    Features: DOS Shell provided features like navigating through directories, copying, moving, and deleting files, as well as other basic file management tasks. It allowed users to interact with the file system using a mouse and menus.
+
+    Discontinuation: DOS Shell was phased out in later versions of Windows as Microsoft shifted to a more Windows-centric operating system, starting with Windows 95 and subsequent versions.
+
+    Modern Alternatives: In modern Windows systems, the graphical file management is typically done through File Explorer. Command-line interfaces have evolved into PowerShell and Command Prompt, providing more advanced features for system management.
