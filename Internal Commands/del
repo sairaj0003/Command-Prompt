@@ -1,0 +1,30 @@
+The del command in the Windows Command Prompt is used to delete one or more files from a specified location. It's a basic command for file deletion.
+Here are the details:
+
+    Use: The del command is used to delete files from a specified location.
+
+    Syntax:
+        del [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
+
+        /P: Prompts for confirmation before deleting each file.
+        /F: Forcefully deletes read-only files.
+        /S: Deletes specified files from all subdirectories.
+        /Q: Quiet mode (doesn't display confirmation prompts).
+        /A[[:]attributes]: Selects files to delete based on attributes.
+        names: Specifies the file or files to be deleted.
+
+    Example:
+        del myfile.txt
+    
+        This example deletes the file named "myfile.txt" in the current directory.
+
+    Additional Information:
+        The del command is a straightforward way to delete files, but it doesn't remove directories.
+        If you want to delete directories along with their contents, you can use the rmdir or rd command.
+        The /P option is useful when you want to confirm each file deletion.
+
+        del /Q /S *.tmp
+
+        This example deletes all files with the ".tmp" extension in the current directory and its subdirectories without prompting for confirmation.
+
+The del command is a basic file management tool in the Windows Command Prompt and is often used in scripts or batch files for automating file deletion tasks.
