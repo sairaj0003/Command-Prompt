@@ -1,0 +1,32 @@
+The doskey command in the Windows Command Prompt is used to enable or disable the command recall and editing features, as well as to create macros.
+Here are the details:
+
+    Use: The doskey command is used to enable or disable the command recall and editing features in the Windows Command Prompt. It can also be used to create command macros.
+
+    Syntax:
+        doskey [/reinstall] [/listsize=size] [/macrofile=filename] [/history] [/insert | /overstrike] [/exename=exename] [/macroname=macroname] [macroname=[text]]
+
+        /reinstall: Installs a new copy of Doskey.
+        /listsize=size: Sets the size of the command history buffer.
+        /macrofile=filename: Specifies a file containing macros.
+        /history: Displays all commands stored in memory.
+        /insert or /overstrike: Specifies whether to use the overstrike or insert mode for editing.
+        /exename=exename: Specifies an executable file other than COMMAND.COM or CMD.EXE.
+        /macroname=macroname: Specifies a name to use for a macro.
+        macroname=[text]: Specifies a macro definition.
+
+    Example:
+        doskey /history
+        
+        This example displays the command history.
+
+        doskey ls=dir
+    
+        This example creates a macro named "ls" that maps to the "dir" command.
+
+    Additional Information:
+        doskey is useful for enhancing the command-line experience by providing command recall, editing, and macro capabilities.
+        Macros created with doskey allow you to define shortcuts for longer command sequences.
+        The /history option shows the list of previously executed commands.
+
+While doskey is available in the Windows Command Prompt, its usage may be more common in legacy or specific scripting scenarios. Modern PowerShell and other command-line tools provide enhanced features and scripting capabilities.
