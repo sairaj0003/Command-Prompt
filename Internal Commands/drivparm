@@ -1,0 +1,20 @@
+drivparm is an MS-DOS command that is used to modify the parameters of an existing physical drive. It is typically used in the CONFIG.SYS file to set parameters for disk drives, but it can also be used for other types of drives, such as tape drives.
+
+    Syntax:
+        drivparm drive=format options
+
+        drive is the drive number in the BIOS (0-3)
+    
+        format is the drive type (0=360KB 5.25", 1=1.2MB 5.25", 2=720KB 3.5", 3=1.44MB 3.5", 4=2.88MB 3.5", 5=LSM-120 5.25", 6=Dual Floppy 3.5")
+    
+        options are one or more of the following:
+            D=n Sets the DMA transfer mode (0-7)
+            I Sets the interleave factor (1-16)
+            S=n Sets the spin speed (0=300rpm, 1=360rpm, 2=300rpm-360rpm, 3=400rpm)
+            T Sets the transfer speed (0=100kB/s, 1=150kB/s, 2=200kB/s)
+            W Sets the write caching (0=off, 1=on)
+
+    Example: The following command sets the DMA transfer mode to 2, the interleave factor to 3, and the write caching to on for drive 0:
+        drivparm drive=0 D=2 I=3 W
+
+The drivparm command is not available in Windows versions newer than MS-DOS. However, there are some third-party tools that can be used to modify drive parameters in newer versions of Windows.
