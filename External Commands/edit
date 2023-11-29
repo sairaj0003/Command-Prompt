@@ -1,0 +1,21 @@
+The edit command in the Windows Command Prompt is used to launch the MS-DOS Editor, a simple text editor that was included with MS-DOS and some versions of Microsoft Windows.
+Here are the details:
+
+    Use: The edit command is used to open the MS-DOS Editor, allowing you to create and edit text files.
+
+    Syntax:
+        edit [filename]
+    
+        [filename]: Specifies the name of the file you want to edit. If the file doesn't exist, a new file with that name will be created.
+
+    Example:
+        edit example.txt
+    
+        This example opens the MS-DOS Editor and creates or edits a file named "example.txt."
+
+    Additional Information:
+        The MS-DOS Editor is a simple text editor with basic functionality.
+        It provides a menu-driven interface for performing tasks like opening, saving, and printing files.
+        MS-DOS Editor is not as feature-rich as modern text editors, but it served as a convenient tool for quick text editing in the MS-DOS environment.
+
+Please note that the edit command and MS-DOS Editor may not be available in modern versions of Windows. Newer versions of Windows typically use more advanced text editors, and you might need to use a different tool, such as Notepad or a third-party text editor, for text editing purposes.
