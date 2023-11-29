@@ -1,0 +1,23 @@
+The expand command in the Windows Command Prompt is used to extract files from a Microsoft Cabinet (.cab) file. It was traditionally used for file compression and decompression in early versions of Windows.
+Here are the details:
+
+    Use: The expand command is used to extract files from a cabinet (.cab) file.
+
+    Syntax:
+        expand [-r] source [destination]
+    
+        -r: Recursively extracts files from subdirectories.
+        source: Specifies the source cabinet file.
+        destination: Specifies the destination directory for the extracted files.
+
+    Example:
+        expand -r filename.cab C:\ExtractedFiles
+    
+        This example extracts all files from the "filename.cab" file into the "C:\ExtractedFiles" directory.
+
+    Additional Information:
+        The expand command was commonly used in the era of Windows 95, Windows 98, and early versions of Windows NT.
+        It is less commonly used in modern Windows systems, as newer compression and extraction tools are available.
+        More modern alternatives for file compression and extraction include tools like zip, unzip, or third-party software.
+
+It's important to note that the use of the expand command is less prevalent in contemporary Windows environments, where users typically rely on more modern and versatile compression utilities.
