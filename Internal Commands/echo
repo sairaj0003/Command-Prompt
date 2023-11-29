@@ -1,0 +1,25 @@
+The echo command in the Windows Command Prompt is used to display messages or enable or disable the echoing feature. Here are the details:
+
+    Use: The echo command is used to display messages or enable/disable the echoing of commands in the Command Prompt.
+
+    Syntax:
+        echo [on | off] [message]
+    
+        [on | off]: Enables or disables the echoing of commands. Use on to enable and off to disable.
+        [message]: The text message to be displayed.
+
+    Example:
+        echo on
+        echo Hello, World!
+    
+        This example enables echoing and then displays the message "Hello, World!".
+        
+    Additional Information:
+        When echo is followed by a message, it displays the message on the screen.
+        echo on enables the echoing of commands. echo off disables it. By default, echoing is usually on.
+        Echoing is useful when you want to see the commands as they are executed, especially in batch files.
+      
+        echo off
+        cls
+      
+        This example disables echoing, clears the screen, and you won't see the commands on the screen as they are executed. The cls command clears the screen.
