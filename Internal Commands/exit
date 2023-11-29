@@ -1,0 +1,23 @@
+The exit command in the Windows Command Prompt is used to close the Command Prompt window. It is a command that terminates the command shell.
+Here are the details:
+
+    Use: The exit command is used to close the Command Prompt window.
+
+    Syntax:
+        exit
+
+    Example:
+        echo Exiting...
+        exit
+    
+        This example displays the message "Exiting..." and then exits the Command Prompt.
+
+    Additional Information:
+        When you run the exit command, it terminates the Command Prompt session and closes the window.
+        It is often used at the end of batch scripts to ensure that the script exits cleanly.
+        In scripts, you might also see the use of exit /b to specify an exit code for the script.
+
+        echo Exiting with code 1...
+        exit /b 1
+
+        This example displays the message "Exiting with code 1..." and exits the script with the exit code 1. The /b option is used to specify the exit code in batch scripts.
