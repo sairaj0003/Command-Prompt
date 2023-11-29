@@ -1,0 +1,31 @@
+The fc command in the Windows Command Prompt is used for comparing two files or sets of files and displaying the differences between them. It is a file comparison tool.
+Here are the details:
+
+    Use: The fc command is used to compare the contents of two files and display the differences.
+
+    Syntax:
+        fc [/A] [/B] [/C] [/L] [/LBn] [/N] [/OFF[LINE]] [/T] [/U] [/W] [/nnnn] [drive1:][path1]filename1 [drive2:][path2]filename2
+
+        /A: Displays only first and last lines for each set of differences.
+        /B: Performs a binary comparison.
+        /C: Disregards the case of letters.
+        /L: Compares files as ASCII text.
+        /LBn: Sets the number of lines for the internal line buffer.
+        /N: Displays the line numbers on an ASCII comparison.
+        /OFF[LINE]: Do not skip files with offline attribute set.
+        /T: Does not expand tabs to spaces.
+        /U: Compares files as UNICODE text.
+        /W: Compresses white space (tabs and spaces) for comparison.
+        /nnnn: Specifies the number of consecutive lines that match before a difference is declared.
+
+    Example:
+        fc file1.txt file2.txt
+    
+        This example compares the contents of "file1.txt" and "file2.txt" and displays the differences.
+
+    Additional Information:
+        The fc command is useful for comparing the content of text files and identifying the differences between them.
+        It is commonly used in scripting or batch files for automation tasks that involve file comparison.
+        The options provided with fc allow for customization based on the specific requirements of the comparison.
+
+Keep in mind that there are other file comparison tools and utilities available that might offer additional features or a graphical user interface for a more user-friendly experience.
