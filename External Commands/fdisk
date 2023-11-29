@@ -1,0 +1,26 @@
+The fdisk command is a utility in the Windows Command Prompt used for managing disk partitions on a hard drive. It was traditionally used in MS-DOS and early versions of Windows for disk partitioning tasks.
+Here are the details:
+
+    Use: The fdisk command is used to create, delete, and manage partitions on a hard disk.
+
+    Syntax:
+        fdisk [/status] [/pri[:n]] [/ext[:n]] [/log[:n]] [/mbr] [/displayorder[:{n|ordinal}]]
+    
+        /status: Displays the current partition status.
+        /pri[:n]: Sets the specified primary partition active.
+        /ext[:n]: Sets the specified extended partition active.
+        /log[:n]: Sets the specified logical partition active.
+        /mbr: Writes a new Master Boot Record (MBR) on the system partition.
+        /displayorder[:{n|ordinal}]: Changes the operating system boot display order.
+
+    Example:
+        fdisk /status
+    
+        This example displays the current partition status of the hard disk.
+
+    Additional Information:
+        The fdisk command is more commonly associated with MS-DOS and early versions of Windows, such as Windows 95 and Windows 98.
+        Modern Windows operating systems, starting with Windows 2000 and later, use different utilities like Disk Management for disk partitioning tasks.
+        The use of fdisk requires careful consideration and understanding of disk partitioning, as improper use can lead to data loss.
+
+For disk management tasks on modern Windows systems, it is recommended to use the Disk Management tool, which provides a more user-friendly interface and additional features for managing partitions. The use of fdisk is typically limited to specific scenarios or legacy systems.
