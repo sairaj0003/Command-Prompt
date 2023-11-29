@@ -1,0 +1,26 @@
+The extract command in the Windows Command Prompt is used to extract files from a Microsoft Cabinet (.cab) file. It is similar in functionality to the expand command and was traditionally used for file compression and decompression in early versions of Windows.
+Here are the details:
+
+    Use: The extract command is used to extract files from a cabinet (.cab) file.
+
+    Syntax:
+        extract [/Y] [/A] [/D:destination] source [newname] [/L]
+    
+        /Y: Suppresses prompting to confirm the overwrite of existing files.
+        /A: Forces all files to be extracted.
+        /D:destination: Specifies the destination directory for the extracted files.
+        source: Specifies the source cabinet file.
+        newname: Specifies a new name for the extracted file(s).
+        /L: Displays a list of the files stored in the cabinet.
+
+    Example:
+        extract /Y /A /D:C:\ExtractedFiles filename.cab
+    
+        This example extracts all files from the "filename.cab" file into the "C:\ExtractedFiles" directory, overwriting existing files without prompting.
+
+    Additional Information:
+        The extract command was commonly used in the era of Windows 95, Windows 98, and early versions of Windows NT.
+        It is less commonly used in modern Windows systems, as newer compression and extraction tools are available.
+        More modern alternatives for file compression and extraction include tools like zip, unzip, or third-party software.
+
+Keep in mind that the use of the extract command is less prevalent in contemporary Windows environments, where users typically rely on more modern and versatile compression utilities.
