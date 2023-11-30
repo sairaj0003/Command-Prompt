@@ -1,0 +1,9 @@
+If you are looking for a way to lock your computer or user session from the Command Prompt, you can use the rundll32.exe command to call the LockWorkStation function from the user32.dll library. This will initiate the locking of your computer.
+Here's the command:
+    rundll32.exe user32.dll,LockWorkStation
+
+When you run this command, it will lock your Windows session, requiring you to enter your password or use another authentication method to unlock it.
+
+Please note that you might need administrative privileges to run this command successfully.
+
+Keep in mind that the availability and behavior of commands can vary based on the Windows version, and some commands may require administrative privileges to execute.
