@@ -1,0 +1,25 @@
+The more command in the Windows Command Prompt is used to display the contents of a text file one screen at a time. It allows you to read through large files or command output in a controlled manner, allowing you to scroll through the content one screenful at a time.
+Here are the details:
+
+    Use: The more command is used to display the contents of a text file or command output in a paginated format.
+
+    Syntax:
+        more [options] [filename]
+    
+        [options]: Specifies additional settings or behavior (e.g., /c for clearing the screen before displaying, /p for prompting before displaying each page).
+        [filename]: Specifies the name of the text file to be displayed. If not provided, it reads from the standard input (e.g., output of another command).
+
+    Examples:
+        Display the contents of a text file:
+            more filename.txt
+    
+        Display the output of a command, e.g., directory listing:
+            dir | more
+    
+        Display the output of a command with additional options:
+            command | more /c /p
+
+Additional Information:
+    The more command is useful for viewing large files or command output without overwhelming the screen.
+    Press the Spacebar to advance to the next screen, and press Enter to advance one line at a time.
+    Press Q to exit the more command.
