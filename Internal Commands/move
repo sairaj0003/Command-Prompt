@@ -1,0 +1,27 @@
+The move command in the Windows Command Prompt is used to move files or directories from one location to another. It is also used to rename files or directories.
+Here are the details:
+
+    Use: The move command is used to move files or directories from one location to another or to rename files or directories.
+
+    Syntax:
+        move [/Y | /-Y] [drive:][path]filename1[,...] destination
+        move [/Y | /-Y] [drive:][path]filename1[,...] destination\
+    
+        /Y: Suppresses confirmation prompts, assuming Yes as the answer to all prompts.
+        /-Y: Prompts to confirm file overwrites.
+
+    Examples:
+        Move a file to another directory:
+            move C:\Source\File.txt D:\Destination\
+        
+        Rename a file:
+            move C:\OldName.txt C:\NewName.txt
+        
+        Move multiple files to another directory:
+            move *.txt D:\Destination\
+
+    Additional Information:
+        The move command can be used for both moving and renaming operations.
+        If the destination is an existing directory, the source files or directories are moved into that directory.
+        If the destination is a new filename, the source file is renamed to that filename.
+        The /Y and /-Y options are used to control whether confirmation prompts are displayed for overwriting existing files.
