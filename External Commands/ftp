@@ -1,0 +1,27 @@
+The ftp command is a Command Prompt command used to connect to an FTP (File Transfer Protocol) server to upload or download files. FTP is a standard network protocol used for transferring files between a client and a server on a computer network.
+Here are the details:
+
+    Use: The ftp command is used to initiate an FTP session from the Command Prompt.
+
+    Syntax:
+        ftp [-v] [-d] [-i] [-n] [-g] [-s:filename] [-a] [-w:windowsize] [host]
+    
+        -v: Suppresses display of remote server responses.
+        -d: Enables debugging.
+        -i: Turns off interactive prompting.
+        -n: Suppresses auto-login upon initial connection.
+        -g: Disables filename globbing.
+        -s:filename: Specifies a text file containing FTP commands.
+        -a: Uses any local interface when binding data connection.
+        -w:windowsize: Overrides the default transfer buffer size.
+
+    Example:
+        ftp ftp.example.com
+    
+        This example connects to an FTP server at "ftp.example.com."
+
+    Additional Information:
+        Once you are connected to an FTP server, you can use commands like get to download files, put to upload files, and other FTP commands to navigate directories and manage files.
+        The ftp command is useful for scripted FTP transfers, and you can create scripts containing FTP commands and pass them to ftp using the -s option.
+
+It's important to note that FTP is considered an insecure protocol because it transmits data, including login credentials, in plain text. For more secure file transfers, consider using protocols like SFTP (SSH File Transfer Protocol) or FTPS (FTP Secure), which provide encryption for data in transit.
