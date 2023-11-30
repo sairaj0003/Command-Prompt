@@ -1,0 +1,28 @@
+The mklink command in the Windows Command Prompt is used to create symbolic links or hard links between files or directories. Symbolic links are references to a file or directory, and hard links are additional file system entries that refer to the same file content.
+Here are the details:
+
+    Use: The mklink command is used to create symbolic links or hard links.
+
+    Syntax:
+        mklink [/d] link target
+    
+        /d: Creates a directory symbolic link. By default, it creates a file symbolic link.
+        link: Specifies the name of the symbolic link to be created.
+        target: Specifies the path (relative or absolute) to the target file or directory.
+
+    Examples:
+        Creating a symbolic link to a file:
+
+            mklink C:\LinkToFile.txt C:\OriginalFile.txt
+        
+        Creating a symbolic link to a directory:
+
+            mklink /d C:\LinkToDirectory C:\OriginalDirectory
+
+    Additional Information:
+        Symbolic links provide a way to reference a file or directory by a different name or location.
+        Symbolic links can be used for various purposes, such as creating shortcuts or organizing files in a more convenient structure.
+        Hard links allow multiple file system entries to point to the same file content. Changes to one entry affect all entries pointing to the same content.
+        Administrative privileges are typically required to create symbolic links.
+
+Use the mklink /? command to view the help information and options associated with the mklink command.
