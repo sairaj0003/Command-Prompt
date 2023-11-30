@@ -1,0 +1,22 @@
+Use: The logoff command is used to log off the current user or a specified user from the command line in Windows.
+
+Syntax:
+    logoff [/f] [/l] [/?]
+    
+        /f: Force running applications to close without warning.
+        /l: Log off the current user.
+        /?: Display help information.
+
+Example:
+    logoff
+    
+    This example logs off the current user.
+
+    logoff /f
+    
+    This example forces running applications to close without warning before logging off the current user.
+
+Additional Information:
+    The logoff command is useful for ending a user session from the command line.
+    The /f option can be used to force the termination of running applications without warning.
+    Administrative privileges may be required, especially when logging off other users.
