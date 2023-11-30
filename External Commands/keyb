@@ -1,0 +1,23 @@
+The keyb command in the Windows Command Prompt is used to configure a keyboard for a specific language. It allows users to set the keyboard layout and code page used by the system.
+Here are the details:
+
+    Use: The keyb command is used to configure the keyboard layout and code page.
+
+    Syntax:
+        keyb [keyboard layout code] [keyboard code page] [/d]
+    
+        [keyboard layout code]: Specifies the keyboard layout code (e.g., us for U.S. layout).
+        [keyboard code page]: Specifies the keyboard code page (e.g., 437 for U.S.).
+        /d: Displays the current keyboard layout and code page.
+
+    Example:
+        keyb us 437
+    
+        This example sets the keyboard layout to U.S. and the code page to 437.
+
+    Additional Information:
+        The keyb command is often used to configure the keyboard for different languages and regional settings.
+        It is particularly relevant in MS-DOS and early versions of Windows.
+        Modern Windows operating systems typically handle keyboard configuration through the Control Panel or Settings interface, and the use of keyb is less common.
+
+Keep in mind that the availability and functionality of certain commands can vary across different Windows versions. If you are using a more recent version of Windows, you might find that keyboard configuration is managed through graphical interfaces rather than the Command Prompt.
