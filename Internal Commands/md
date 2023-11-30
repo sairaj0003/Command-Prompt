@@ -1,0 +1,20 @@
+The md command in the Windows Command Prompt is used to create a new directory or folder. The command stands for "make directory."
+Here are the details:
+
+    Use: The md command is used to create a new directory or folder in the specified path.
+
+    Syntax:
+        md [drive:][path]dirname
+    
+        [drive:][path]: Specifies the drive and path where the new directory should be created. If not specified, the directory is created in the current working directory.
+        dirname: Specifies the name of the new directory.
+
+    Example:
+        md C:\NewFolder
+        
+        This example creates a new directory named "NewFolder" in the root of the C: drive.
+
+    Additional Information:
+        The md command is synonymous with the mkdir command; both can be used interchangeably to create directories.
+        If the specified path does not exist, the md command will attempt to create all necessary directories in the specified path.
+        If the specified directory already exists, the command will complete successfully without making any changes.
