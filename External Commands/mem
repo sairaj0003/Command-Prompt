@@ -1,0 +1,13 @@
+The mem command in the Windows Command Prompt is used to display information about memory usage on the system. However, it's worth noting that the mem command is a legacy command from MS-DOS, and on modern versions of Windows, it may not provide detailed or accurate information about system memory usage.
+Here are the details:
+
+    Use: The mem command displays information about memory usage, including the total memory, free memory, and memory used by the system.
+
+    Syntax:
+        mem
+        
+    Additional Information:
+        In MS-DOS, the mem command was used to view information about available memory. However, with the transition to Windows NT-based operating systems (Windows 2000 and later), the mem command became less relevant, and more advanced tools like Task Manager or PowerShell are used to monitor system resources.
+        On modern Windows systems, you might use tools such as Task Manager (Ctrl + Shift + Esc) or PowerShell commands like Get-Process for more detailed and up-to-date information about memory usage.
+
+If you are using a more recent version of Windows and are interested in current memory information, I recommend using Task Manager or other system monitoring tools provided by Windows.
