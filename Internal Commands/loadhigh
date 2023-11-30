@@ -1,0 +1,22 @@
+The loadhigh command, similar to the loadfix command, was used in MS-DOS and early versions of Windows to load a program into upper memory. This helped free up conventional memory, which was limited to 640 KB, for other applications. The upper memory area (UMA) or high memory area (HMA) referred to memory locations above the conventional 640 KB boundary.
+Here are the details:
+
+    Use: The loadhigh command is used to load a program into upper memory, allowing it to run in the upper memory area.
+
+    Syntax:
+        loadhigh [program] [parameters]
+    
+        program: Specifies the program to be loaded into upper memory.
+        parameters: Specifies any parameters that should be passed to the program.
+    
+    Example:
+        loadhigh myprogram.exe
+    
+        This example loads the program "myprogram.exe" into upper memory.
+
+    Additional Information:
+        Conventional memory in MS-DOS and early Windows versions was limited to 640 KB, and loading programs into upper memory allowed for more efficient use of available memory.
+        The loadhigh command was commonly used to optimize memory usage and avoid memory limitations when running larger applications.
+        As operating systems evolved, especially with the transition to 32-bit and 64-bit architectures, memory management became more sophisticated, and direct management of upper memory became less necessary.
+
+It's important to note that the use of loadhigh is specific to MS-DOS and early Windows versions and may not be applicable or necessary in modern Windows operating systems. If you are dealing with compatibility issues for older programs, consider using compatibility modes or other compatibility tools provided by the operating system.
