@@ -1,0 +1,40 @@
+The goto command in the Windows Command Prompt is used for transferring control to a specific label within a batch script. It allows you to create loops and conditional branching in batch files.
+Here are the details:
+
+    Use: The goto command is used to jump to a specified label in a batch script.
+
+    Syntax:
+        goto label
+    
+        label: Specifies the location in the script where control should be transferred.
+
+    Example:
+        @echo off
+        echo This is the beginning of the script.
+        goto myLabel
+        echo This line will be skipped.
+
+        :myLabel
+        echo This is after the goto command.
+    
+        In this example, the script jumps to the label :myLabel after the goto myLabel command is encountered.
+
+    Additional Information:
+        Labels in batch scripts are defined using a colon (:) followed by the label name.
+        The goto command is often used to create loops and conditional branching in batch scripts.
+        It's important to use goto carefully, as improper use can lead to infinite loops or unexpected behavior.
+        In modern scripting, particularly with PowerShell, more structured control flow constructs are often used, but goto remains a valid option in traditional batch scripting.
+
+        Example of a simple loop using goto:
+            @echo off
+            set count=1
+            
+            :loop
+            echo Iteration %count%
+            set /A count+=1
+            
+            if %count% leq 5 (
+              goto loop
+            )
+        
+            In this example, the script uses goto to create a loop that iterates five times. The label :loop marks the beginning of the loop, and the script jumps back to the label until the condition is no longer met.
