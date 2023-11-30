@@ -1,0 +1,28 @@
+The mscdex command is associated with Microsoft CD Extensions, a set of extensions that provided CD-ROM support in MS-DOS. This command was used to load the CD-ROM extensions, allowing MS-DOS to recognize and access data from a CD-ROM drive.
+Here are the details:
+
+    Use: The mscdex command is used to load Microsoft CD Extensions and enable CD-ROM support in MS-DOS.
+
+    Syntax:
+        mscdex [/D:driver /M:microdrive /E /S /L:letter /V /Y /K /V]
+    
+        /D:driver: Specifies the device driver for the CD-ROM drive.
+        /M:microdrive: Specifies the type of microchannel adapter used.
+        /E: Enables drive letter emulation for accessing the CD-ROM drive.
+        /S: Suppresses the display of startup messages.
+        /L:letter: Assigns a specific drive letter to the CD-ROM drive.
+        /V: Enables verbose mode, displaying additional information.
+        /Y: Skips the user prompt when loading.
+        /K: Keeps the driver in memory, preventing it from being unloaded.
+
+    Example:
+        mscdex /D:MSCD001 /L:E
+    
+        This example loads CD-ROM support, specifying the device driver as MSCD001 and assigning the drive letter E to the CD-ROM drive.
+
+    Additional Information:
+        CD-ROM support was not inherently part of MS-DOS, and users needed to load CD-ROM extensions to access data from CD-ROM drives.
+        The actual device driver file (e.g., MSCDEX.EXE) needed to be present on the system for the mscdex command to function.
+        As technology advanced, and with the advent of Windows operating systems, CD-ROM support became more integrated, and specific commands like mscdex were used less frequently.
+
+It's important to note that the use of mscdex is specific to MS-DOS and early Windows versions. In modern Windows operating systems, CD-ROM support is typically handled automatically without the need for explicit commands.
