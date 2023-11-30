@@ -1,0 +1,23 @@
+The nbtstat command in the Windows Command Prompt is used to display statistics and current connections related to NetBIOS over TCP/IP. NetBIOS (Network Basic Input/Output System) is a networking protocol used for file and printer sharing, as well as other communication between computers on a local network.
+Here are the details:
+
+    Use: The nbtstat command is used to display NetBIOS over TCP/IP statistics and information about current NetBIOS connections.
+
+    Syntax:
+        nbtstat [options]
+    
+        [options]: Specifies various options to display specific information. Common options include -a (list NetBIOS name table), -A (list NetBIOS name table for a remote computer), -c (display the contents of the NetBIOS name cache), -n (list local NetBIOS names), and others.
+
+    Examples:
+        Display the local NetBIOS names:
+            nbtstat -n
+        
+        Display the NetBIOS name table for a remote computer:
+            nbtstat -A 192.168.1.1
+
+    Additional Information:
+        nbtstat is commonly used for troubleshooting NetBIOS-related issues, checking name resolution, and examining NetBIOS statistics.
+        The command provides information about NetBIOS names, their status, and their association with IP addresses.
+        It can be useful for diagnosing problems related to NetBIOS name resolution, especially in environments where NetBIOS is still in use.
+
+For more detailed information and additional options, you can use the nbtstat /? command to view the help documentation associated with the nbtstat command.
