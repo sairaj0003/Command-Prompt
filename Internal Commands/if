@@ -1,0 +1,44 @@
+The if command in the Windows Command Prompt is used for conditional branching in batch scripts. It allows you to execute different commands based on whether a certain condition is true or false.
+Here are the details:
+
+    Use: The if command is used for conditional execution of commands in batch scripts.
+
+    Syntax:
+        if [not] condition command
+    
+        [not]: Optional. If present, negates the condition.
+        condition: Specifies a condition to be tested.
+        command: Specifies the command to be executed if the condition is true.
+
+    Example:
+        @echo off
+        set /p userInput=Enter a number: 
+        if %userInput% gtr 10 (
+            echo The number is greater than 10.
+        ) else (
+            echo The number is 10 or less.
+        )
+    
+        This example prompts the user to enter a number, and then it checks if the entered number is greater than 10.
+
+    Additional Information:
+        The if command supports various comparison operators such as equ (equal), neq (not equal), lss (less than), leq (less than or equal), gtr (greater than), and geq (greater than or equal).
+        Conditions can also be based on string comparisons, file existence, and other tests.
+        if statements can be used in combination with other commands to create more complex logic in batch scripts.
+
+        Here is an example of a more complex if statement checking both the value of a variable and the existence of a file:
+
+        @echo off
+        set /p userInput=Enter a number: 
+        if %userInput% gtr 10 (
+            echo The number is greater than 10.
+            if exist "example.txt" (
+                echo The file example.txt exists.
+            ) else (
+                echo The file example.txt does not exist.
+            )
+        ) else (
+            echo The number is 10 or less.
+        )
+        
+        In this example, the script checks if the entered number is greater than 10 and also checks if the file "example.txt" exists. The actions are performed based on the combined conditions.
