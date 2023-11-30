@@ -1,0 +1,19 @@
+The help command in the Windows Command Prompt is used to display information about available commands and how to use them. It provides a list of commands along with brief descriptions.
+Here are the details:
+
+    Use: The help command is used to display information about available commands.
+
+    Syntax:
+        help [command]
+    
+        [command]: Specifies the command for which you want to see help information. If no command is specified, a general list of commands is displayed.
+      
+    Example:
+        help copy
+        
+        This example displays help information for the copy command.
+
+    Additional Information:
+        The help command is a useful tool for learning about various commands available in the Command Prompt.
+        You can use it without specifying a command to get a list of available commands, or you can provide the name of a specific command to see detailed information about that command.
+        It provides a brief description and syntax for each command, along with available options.
