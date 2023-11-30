@@ -1,0 +1,22 @@
+The graftabl command in the Windows Command Prompt is used to enable the use of an extended character set in graphics mode. It is a command that was primarily used in MS-DOS for adjusting the character set when working with specific graphics modes.
+Here are the details:
+
+    Use: The graftabl command is used to modify the character set mapping in graphics mode.
+
+    Syntax:
+        graftabl [/status | codepage]
+    
+        /status: Displays the current character set information.
+        codepage: Specifies the code page to be grafted.
+
+    Example:
+        graftabl 850
+    
+        This example grafts the extended character set of code page 850.
+
+    Additional Information:
+        The graftabl command was commonly used in MS-DOS to enable or modify the character set when working with specific graphics modes.
+        It allowed users to adjust the character set mapping to accommodate different code pages.
+        In modern Windows environments, character encoding and code page settings are typically handled by the operating system and applications, and the use of graftabl is uncommon.
+
+It's worth noting that the use of graftabl is a legacy command and may not have practical applications in contemporary Windows systems. If you encounter situations where character encoding needs adjustment, it's more common to handle such configurations through regional settings or specific application preferences.
