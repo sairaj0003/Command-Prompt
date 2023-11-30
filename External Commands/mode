@@ -1,0 +1,28 @@
+The mode command in the Windows Command Prompt is used to configure system devices such as the console display, keyboard, and printer. It allows you to set or display the status of these devices.
+Here are the details:
+
+    Use: The mode command is used to configure system devices and display or set the status of the console display, keyboard, and printer.
+
+    Syntax:
+        mode [device] [options]
+    
+        [device]: Specifies the system device to be configured (e.g., CON for the console display, COMx for a serial port, LPTx for a parallel port).
+        [options]: Specifies the configuration options for the specified device.
+
+    Examples:
+        Display the current status of the console display:
+            mode
+        
+        Set the console display to 80 columns by 25 rows:
+            mode con cols=80 lines=25
+        
+        Configure a serial port (COM1) for specific settings:
+            mode com1:96,n,8,1
+
+    Additional Information:
+        The mode command is often used to configure the console display, COM ports (serial ports), and LPT ports (parallel ports).
+        When used without options, it displays the current status of the console display.
+        For COM ports, the options specify settings such as baud rate, parity, data bits, and stop bits.
+        Administrative privileges may be required to configure certain devices.
+
+Use the mode /? command to view the help information and options associated with the mode command.
