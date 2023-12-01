@@ -1,0 +1,31 @@
+The prompt command in the Windows Command Prompt is used to customize the appearance of the command prompt prompt. The prompt is the text that appears before the cursor in the Command Prompt window, indicating that the system is ready to accept a command.
+Here are the details:
+
+    Use: The prompt command allows you to customize the appearance of the command prompt.
+
+    Syntax:
+        prompt [text]
+    
+        [text]: Specifies the text to be displayed as the prompt. You can include special codes to display information such as the current directory or time.
+
+    Examples:
+        Set a custom prompt:
+            prompt $p$g
+        
+            This sets the prompt to display the current drive and folder followed by the greater-than symbol.
+        
+        Restore the default prompt:
+            prompt
+    
+            This resets the prompt to the default, typically displaying the current path.
+
+    Additional Information:
+        The prompt command allows you to create a more informative or visually distinctive command prompt.
+        You can include special codes in the prompt, such as:
+            $p: Current drive and path.
+            $g: Greater-than sign (>). This is often used as the command prompt symbol.
+            $t: Current time.
+            $d: Current date.
+            ... and others.
+
+For a complete list of prompt codes, you can use prompt /? in the Command Prompt. Customizing the prompt can be useful for providing additional information or personalizing the command prompt environment.
