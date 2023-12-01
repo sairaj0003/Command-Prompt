@@ -1,0 +1,25 @@
+The net command in the Windows Command Prompt is a versatile command-line tool used for managing various network-related tasks and services. It provides a range of subcommands for tasks such as user and group management, network share management, printer management, and more.
+Here are some details about the net command:
+
+    Use: The net command is used for managing various aspects of a Windows network.
+
+    Syntax:
+        net [options] [command]
+    
+        [options]: Specifies various options for the net command.
+        [command]: Specifies the specific subcommand to execute.
+
+    Examples:
+        Display information about user accounts:
+            net user
+        
+        Map a network drive:
+            net use Z: \\server\share
+        
+        Display information about network shares:
+            net share
+
+    Additional Information:
+        The net command provides a wide range of functionalities related to networking, including user and group management, share management, printer management, and more.
+        It is commonly used in batch scripts, automation tasks, and for managing network resources from the command line.
+        To see the available commands and their options, you can use net /? or net help.
