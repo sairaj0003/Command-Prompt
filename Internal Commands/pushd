@@ -1,0 +1,21 @@
+The pushd command in the Windows Command Prompt is used to change the current directory and also stores the current directory on a stack so that it can be returned to later using the popd command.
+Here are the details:
+
+    Use: The pushd command is used to change the current directory and save the current directory onto a stack.
+
+    Syntax:
+        pushd [path]
+    
+        [path]: Specifies the directory to change to. If no path is provided, it changes to the current user's home directory.
+
+    Examples:
+        Change to a specific directory and store the current directory on the stack:
+            pushd C:\Example
+        
+        Change to the user's home directory and store the current directory on the stack:
+            pushd %HOMEPATH%
+
+    Additional Information:
+        The pushd command not only changes the current directory but also stores the current directory on a stack, allowing you to return to it later using popd.
+        After using pushd, you can use popd to return to the directory that was on top of the stack.
+        This can be useful for navigating between directories, especially in batch scripts or command prompt sessions.
