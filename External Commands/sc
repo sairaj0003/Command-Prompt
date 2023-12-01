@@ -1,0 +1,32 @@
+The sc command in the Windows Command Prompt is used to communicate with the Service Control Manager (SCM) or services on local or remote computers. It allows you to query, configure, or control services.
+Here are the details:
+
+    Use: The sc command is used for managing services.
+
+    Syntax:
+        sc [command] [service_name] [options]
+    
+        [command]: Specifies the action to be performed (e.g., query, start, stop, config).
+        [service_name]: Specifies the name of the service.
+        [options]: Specifies additional options depending on the command.
+
+    Examples:
+        Query information about a service:
+            sc query serviceName
+        
+        Start a service:
+            sc start serviceName
+        
+        Stop a service:
+            sc stop serviceName
+        
+        Configure a service (change start type, etc.):
+            sc config serviceName start= auto
+
+    Additional Information:
+        The sc command is a powerful tool for managing services on Windows systems.
+        Common commands include query (display information about a service), start (start a service), stop (stop a service), and config (change configuration settings).
+        It can be used locally or to manage services on remote computers.
+        Administrative privileges may be required for certain operations.
+
+For more details and options, you can use sc /? in the Command Prompt. The sc command is often used for scripting and automation tasks related to Windows services.
