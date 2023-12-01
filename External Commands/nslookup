@@ -1,0 +1,27 @@
+The nslookup command in the Windows Command Prompt is used for querying DNS (Domain Name System) to obtain domain name or IP address mapping, DNS records, and other DNS-related information. It is a useful tool for troubleshooting and diagnosing DNS-related issues.
+Here are the details:
+
+    Use: The nslookup command is used for DNS queries to retrieve information about domain names, IP addresses, mail servers, and more.
+
+    Syntax:
+        nslookup [hostname] [server]
+    
+        [hostname]: Specifies the domain name or IP address to look up.
+        [server]: Specifies the DNS server to query. If not specified, the default DNS server configured on the system is used.
+
+    Examples:
+        Look up the IP address for a domain name:
+            nslookup www.example.com
+        
+        Look up the domain name for an IP address:
+            nslookup 203.0.113.1
+        
+        Specify a custom DNS server:
+            nslookup www.example.com 8.8.8.8
+
+    Additional Information:
+        nslookup provides interactive and non-interactive modes. In interactive mode, you can enter commands one by one, and in non-interactive mode, you can specify the query directly on the command line.
+        It's commonly used for diagnosing DNS-related issues, verifying DNS records, and checking the resolution of domain names.
+        Use the exit command to exit interactive mode.
+
+For more detailed information and options, you can use nslookup /? or nslookup -h in the Command Prompt. Keep in mind that certain network configurations or security policies might affect the results of DNS queries.
