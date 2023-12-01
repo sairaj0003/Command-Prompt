@@ -1,0 +1,22 @@
+The rename command in the Windows Command Prompt is used to rename files or directories. It's an alternative to the ren command, and both can be used interchangeably for renaming.
+Here are the details:
+
+    Use: The rename command, like ren, is used to rename files or directories.
+
+    Syntax:
+        rename [old_name] [new_name]
+    
+        [old_name]: Specifies the current name of the file or directory.
+        [new_name]: Specifies the new name for the file or directory.
+
+    Examples:
+        Rename a file:
+            rename oldfile.txt newfile.txt
+        
+        Rename a directory:
+            rename oldfolder newfolder
+
+    Additional Information:
+        The rename command is functionally equivalent to the ren command. You can use either of them based on personal preference.
+        As with ren, it's important to provide the full or relative path to the file or directory you want to rename.
+        The rename command does not support wildcard characters (* or ?) for batch renaming multiple files. For that purpose, you might need to use a for loop or other methods.
