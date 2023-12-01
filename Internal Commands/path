@@ -1,0 +1,24 @@
+The path command in the Windows Command Prompt is used to display or set the command search path for executable files. The command search path is a list of directories where the system looks for executable files when you enter a command without specifying its full path.
+Here are the details:
+
+    Use: The path command is used to display or set the command search path.
+
+    Syntax:
+        path [directory1;directory2;...]
+    
+        If used without any arguments, it displays the current command search path.
+        If used with directories, it sets the command search path to the specified directories.
+    
+    Examples:
+        Display the current command search path:
+            path
+        
+        Set the command search path to include additional directories:
+            path C:\Program Files\MyApp;%PATH%
+        
+            This example adds "C:\Program Files\MyApp" to the command search path.
+
+    Additional Information:
+        The command search path is a list of directories separated by semicolons (;), and the system searches for executable files in these directories in the order they appear in the path.
+        When you enter a command, the system looks for the corresponding executable file in each directory in the path until it finds the executable or exhausts the search path.
+        Modifying the path can be useful when you want to include directories containing executable files that you want to be accessible from any location in the command prompt.
