@@ -1,0 +1,27 @@
+The netsh command in the Windows Command Prompt is a powerful and versatile tool for configuring and managing network settings. It allows users to interact with various networking components, such as interfaces, routing tables, firewalls, and more. Netsh stands for Network Shell.
+Here are the details:
+
+    Use: The netsh command is used to configure, monitor, and troubleshoot network settings in Windows.
+
+    Syntax:
+        netsh [context] [sub-context] [command | -f script-file]
+    
+        [context]: Specifies the main networking context (e.g., interface, firewall, routing).
+        [sub-context]: Specifies a sub-context under the main context.
+        [command]: Specifies a command within the context.
+        [-f script-file]: Specifies a script file containing netsh commands.
+
+    Examples:
+        Display information about network interfaces:
+            netsh interface show interface
+        
+        Set the IP address of a network interface:
+            netsh interface ipv4 set address "Local Area Connection" static 192.168.1.2 255.255.255.0 192.168.1.1
+        
+        Configure the Windows Firewall:
+            netsh advfirewall set allprofiles state on
+
+    Additional Information:
+        netsh is an essential tool for network administrators and advanced users for configuring network-related settings.
+        It allows for a wide range of network configurations, including interfaces, firewalls, DHCP, DNS, and more.
+        The netsh command supports scripting, allowing users to create and execute scripts containing multiple commands.
