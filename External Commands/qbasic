@@ -1,0 +1,6 @@
+To start QBasic from the Command Prompt, you can use the following command:
+    qbasic
+
+    This will launch the QBasic integrated development environment (IDE), where you can write, edit, and run QBasic programs.
+
+Once you have started QBasic, you can start writing and editing your QBasic programs. You can also run your programs by pressing the F5 key or by selecting the Run menu and then clicking Run.
