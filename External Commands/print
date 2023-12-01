@@ -1,0 +1,31 @@
+The print command is a built-in command in Windows Command Prompt (CMD) that allows you to send documents to a printer. It can be used to print text files, images, and other types of documents.
+
+    Syntax:
+        print [/D:printer] [pathname]
+    
+        [/D:printer]: Specifies the printer you want to use. If you omit this option, the document will be sent to the default printer.
+        [pathname]: Specifies the path to the document you want to print. You can also specify multiple documents by separating them with spaces.
+
+    Example:
+        To print a document named "document.txt" to the default printer, you would use the following command:
+            print document.txt
+
+    Additional Options:
+        The print command also has several additional options that you can use to control how documents are printed. For example, you can use the /P option to pause printing before each page, and the /Q option to print in quiet mode without displaying any messages.
+
+        For a complete list of options, you can type the following command:
+            print /?
+
+    Printing from a Network Printer:
+        If you want to print to a network printer, you will need to specify the network printer's name in the /D:printer option. For example, to print to a network printer named "networkprinter", you would use the following command:
+            print /D:networkprinter document.txt
+
+    Using Wildcards:
+        You can also use wildcards in the pathname parameter to print multiple documents. For example, to print all documents in the current directory that have the .txt extension, you would use the following command:
+            print *.txt
+
+    Printing from a Web Page:
+        The print command can also be used to print from a web page. To do this, you will need to copy the URL of the web page and then use the following command:
+            print URL
+
+            Replace URL with the URL of the web page you want to print.
