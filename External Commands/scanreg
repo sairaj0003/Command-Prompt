@@ -1,0 +1,21 @@
+The scanreg command is not a native command in the Windows Command Prompt. However, you might be referring to the Registry Checker utility on Windows 9x operating systems, which is used to back up and restore the Windows registry.
+Here are some details about the Windows 9x Registry Checker utility:
+
+    Use: The Registry Checker is used for backing up and restoring the Windows registry on Windows 95, Windows 98, and Windows Me.
+
+    Functionality:
+        Registry Checker runs automatically when you start your computer and periodically creates backups of the registry.
+        It allows you to manually restore a previous registry backup if there are issues with the current registry.
+
+    Access:
+        To access the Registry Checker utility, you typically use the "ScanReg" command. This can be done from the Windows Command Prompt or by running "ScanReg.exe" from the Run dialog.
+
+    Examples:
+        To run the Registry Checker from the Command Prompt:
+            scanreg
+
+    Additional Information:
+        The Registry Checker creates daily backups of the registry, and up to five previous backups are kept. If issues arise, you can use the utility to restore the registry to a previous state.
+        Windows Registry is a critical component of the operating system, and changes to it can impact system stability. The Registry Checker helps in recovering from registry-related problems.
+
+Please note that modern versions of Windows (Windows NT, 2000, XP, Vista, 7, 8, 10) use a different registry architecture, and the Registry Checker is not applicable to these systems. If you are using a more recent version of Windows, other utilities and features may be available for managing and troubleshooting the registry.
