@@ -1,0 +1,25 @@
+The set command in the Windows Command Prompt is used to display, set, or modify environment variables. Environment variables are dynamic values that can affect the behavior of processes and programs running on a computer.
+Here are the details:
+
+    Use: The set command is primarily used for managing environment variables.
+
+    Syntax:
+        set [variable=value]
+    
+        If used without arguments, it displays the current environment variables.
+        If used with the variable=value syntax, it sets the value of the specified environment variable.
+
+    Examples:
+        Display all environment variables:
+            set
+        
+        Set the value of a specific environment variable:
+            set MY_VARIABLE=123
+
+    Additional Information:
+        Environment variables store information such as system paths, user preferences, and configuration settings.
+        Changes made with set are temporary and only affect the current Command Prompt session.
+        To make permanent changes to environment variables, you may use the System Properties dialog or the setx command.
+        Environment variables are often referenced by scripts and programs to access system-wide or user-specific settings.
+
+For more details and options, you can use set /? in the Command Prompt. 
