@@ -1,0 +1,66 @@
+The power command is used to control power management on older versions of Windows. It is not available on Windows 10 or later.
+
+    Syntax:
+        POWER [option]
+
+        Options:
+            /STAT: Displays the current power state of the computer.
+        
+            /ON: Turns on the computer.
+        
+            /OFF: Turns off the computer.
+        
+            /RESTART: Restarts the computer.
+        
+            /HIBERNATE: Hibernates the computer.
+        
+            /SLEEPOFF: Disables sleep mode.
+        
+            /SLEEPOFFTIME time: Sets the sleep timeout interval.
+        
+            /WAKE: Enables sleep mode.
+        
+            /WAKEINTERVAL time: Sets the wake timeout interval.
+        
+            /WAITFORWAKE: Waits for the computer to wake up from sleep or hibernation.
+        
+            /STATUS: Displays the status of power management settings.
+        
+            /DEVICESTATUS: Displays the status of power management for all devices.
+        
+            /DEVICESTATUS [devicename]: Displays the status of power management for a specific device.
+        
+            /SET devicename [option]: Sets the power management settings for a specific device.
+        
+            /CLEAR devicename [option]: Clears the power management settings for a specific device.
+
+    Examples:
+        POWER /STAT: Displays the current power state of the computer.
+    
+        POWER /ON: Turns on the computer.
+    
+        POWER /OFF: Turns off the computer.
+    
+        POWER /RESTART: Restarts the computer.
+    
+        POWER /HIBERNATE: Hibernates the computer.
+    
+        POWER /SLEEPOFF: Disables sleep mode.
+    
+        POWER /SLEEPOFFTIME 300: Sets the sleep timeout interval to 5 minutes.
+    
+        POWER /WAKE: Enables sleep mode.
+    
+        POWER /WAKEINTERVAL 120: Sets the wake timeout interval to 2 minutes.
+    
+        POWER /WAITFORWAKE: Waits for the computer to wake up from sleep or hibernation.
+    
+        POWER /STATUS: Displays the status of power management settings.
+    
+        POWER /DEVICESTATUS: Displays the status of power management for all devices.
+    
+        POWER /DEVICESTATUS mymouse: Displays the status of power management for the mouse named mymouse.
+    
+        POWER /SET mymouse /WAKE: Enables the mouse named mymouse to wake the computer from sleep or hibernation.
+    
+        POWER /CLEAR mymouse /WAKE: Disables the mouse named mymouse from waking the computer from sleep or hibernation.
