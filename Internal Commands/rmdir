@@ -1,0 +1,24 @@
+The rmdir command in the Windows Command Prompt is used to remove or delete a directory (folder). It's similar to the rd command, and both commands serve the same purpose of deleting directories.
+Here are the details:
+
+    Use: The rmdir command is used to delete a directory from the file system.
+
+    Syntax:
+        rmdir /s /q directory_path
+    
+        /s: Removes all directories and files in the specified directory in addition to the directory itself.
+        /q: Enables quiet mode. You won't be prompted for confirmation when deleting a directory and its contents.
+
+    Examples:
+        Delete an empty directory:
+            rmdir C:\Example
+        
+        Delete a directory and its contents:
+            rmdir /s /q C:\Example
+
+    Additional Information:
+        The rmdir command is functionally equivalent to the rd command. Both commands are used to remove directories.
+        Be cautious when using the /s and /q options, especially with wildcards, as it can result in the deletion of multiple directories and files without confirmation.
+        If the directory is not empty and you use rmdir without the /s option, you'll receive an error message.
+
+Always double-check the directory path before using rmdir, especially with the /s and /q options, to avoid unintentional data loss.
