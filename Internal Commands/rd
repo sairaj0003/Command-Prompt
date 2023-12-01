@@ -1,0 +1,24 @@
+The rd command in the Windows Command Prompt is used to remove or delete a directory (folder). It stands for "remove directory."
+Here are the details:
+
+    Use: The rd command is used to delete a directory from the file system.
+
+    Syntax:
+        rd /s /q directory_path
+    
+        /s: Removes all directories and files in the specified directory in addition to the directory itself.
+        /q: Enables quiet mode. You won't be prompted for confirmation when deleting a directory and its contents.
+
+    Examples:
+        Delete an empty directory:
+            rd C:\Example
+        
+        Delete a directory and its contents:
+            rd /s /q C:\Example
+
+    Additional Information:
+        Be cautious when using the /s and /q options, especially with wildcards, as it can result in the deletion of multiple directories and files without confirmation.
+        The rmdir command is an alternative to rd and has the same functionality.
+        If the directory is not empty and you use rd without the /s option, you'll receive an error message.
+
+Always double-check the directory path before using rd, especially with the /s and /q options, to avoid unintentional data loss.
