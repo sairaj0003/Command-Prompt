@@ -1,0 +1,26 @@
+The netstat command in the Windows Command Prompt is used to display active network connections, listening ports, and related network statistics. It provides a snapshot of the network status on a local machine.
+Here are the details:
+
+    Use: The netstat command is used to display information about active network connections, listening ports, and network statistics.
+
+    Syntax:
+        netstat [-a] [-b] [-e] [-f] [-n] [-o] [-p protocol] [-r] [-s] [-t] [-x] [interval]
+    
+        Various options control the information displayed (e.g., -a for all connections and listening ports, -b to display executable involved in creating each connection).
+
+    Examples:
+        Display all active connections and listening ports:
+            netstat -a
+        
+        Display the PID (Process ID) associated with each connection:
+            netstat -ano
+        
+        Display statistics for network protocols:
+            netstat -s
+
+    Additional Information:
+        netstat is useful for diagnosing network-related issues, identifying active connections, and monitoring network activity.
+        The command can show information about TCP, UDP, and other protocols.
+        The -o option displays the PID associated with each connection, allowing users to correlate network activity with specific processes.
+
+For a complete list of options and additional details, you can use netstat /? in the Command Prompt. Keep in mind that some options may require administrative privileges to display certain information.
