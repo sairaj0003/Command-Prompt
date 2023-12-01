@@ -1,0 +1,32 @@
+The route command in the Windows Command Prompt is used to display and manipulate the local IP routing table. It allows users to view, add, or delete entries in the routing table, which determines how network traffic is directed.
+Here are the details:
+
+    Use: The route command is used for viewing and managing the IP routing table.
+
+    Syntax:
+        route [-f] [command [destination] [mask subnet_mask] [gateway] [metric metric] [if interface]]
+    
+        -f: Clears the routing table before running the specified command.
+        command: Specifies the action to be performed (e.g., print for displaying the routing table, add for adding a route).
+        destination: Specifies the destination IP address or network.
+        subnet_mask: Specifies the subnet mask.
+        gateway: Specifies the IP address of the next-hop router.
+        metric: Specifies the metric for the route (cost of the route).
+        if interface: Specifies the interface for the route.
+
+    Examples:
+        Display the routing table:
+            route print
+        
+        Add a route:
+            route add 192.168.1.0 mask 255.255.255.0 192.168.0.1
+        
+        Delete a route:
+            route delete 192.168.1.0
+
+    Additional Information:
+        The routing table is a critical component in networking that determines how network traffic is routed between different destinations.
+        The route command is commonly used for troubleshooting network connectivity issues or for configuring specific routing scenarios.
+        Be cautious when adding or modifying routes, as incorrect configurations can impact network connectivity.
+
+For more details and options, you can use route /? in the Command Prompt. The specific options available may vary depending on the Windows version.
