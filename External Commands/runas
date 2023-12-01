@@ -1,0 +1,30 @@
+The runas command in the Windows Command Prompt is used to run a program or command as another user. This is particularly useful for executing commands with elevated privileges or for running programs under a different user account.
+Here are the details:
+
+    Use: The runas command is used to run a program or command with different user credentials.
+
+    Syntax:
+        runas [{/profile | /noprofile}] [/env] [/netonly] [/smartcard] [/showtrustlevels] [/trustlevel] /user:username program
+    
+        /profile: Loads the user's profile.
+        /noprofile: Does not load the user's profile.
+        /env: Uses the current environment instead of the user's.
+        /netonly: Specifies that the command should be run with the credentials specified, but on the network.
+        /smartcard: Specifies that the credentials should be supplied from a smartcard.
+        /showtrustlevels: Displays the trust levels that can be used with the /trustlevel switch.
+        /trustlevel: Specifies the minimum trust level required to run the program.
+
+    Examples:
+        Run Command Prompt as an administrator:
+            runas /user:Administrator cmd
+        
+        Run Notepad as a different user:
+            runas /user:domain\username "notepad.exe"
+
+    Additional Information:
+        The runas command is often used when administrative privileges are required for executing specific commands or programs.
+        It prompts for the password of the specified user if necessary.
+        It can be useful for troubleshooting or performing administrative tasks without having to switch users or log in and out.
+        When using runas to execute commands with elevated privileges, you may encounter the UAC (User Account Control) prompt, requesting confirmation.
+
+For more details and options, you can use runas /? in the Command Prompt. Note that using the runas command may require appropriate permissions and credentials.
