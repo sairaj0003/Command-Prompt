@@ -1,0 +1,20 @@
+The popd command in the Windows Command Prompt is used to change the current directory to the one most recently stored by the pushd command. It is part of a pair of commands (pushd and popd) that allows you to navigate between directories more easily.
+Here are the details:
+
+    Use: The popd command is used to change the current directory to the one most recently stored by the pushd command.
+
+    Syntax:
+        popd
+        
+        When this command is executed, it removes the top directory from the stack (the one most recently pushed by pushd) and sets the current directory to that location.
+
+    Example:
+        pushd C:\Example
+        popd
+        
+        In this example, pushd is used to change the current directory to C:\Example, and then popd is used to return to the directory that was active before the pushd command was executed.
+
+    Additional Information:
+        The pushd and popd commands are often used together to simplify directory navigation in batch scripts.
+        The pushd command saves the current directory to a stack and changes to a new directory, while popd retrieves the directory from the top of the stack, making it the current directory.
+        This is useful for scenarios where you need to temporarily change directories and then return to the original directory.
