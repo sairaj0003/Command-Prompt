@@ -1,0 +1,26 @@
+Robocopy, which stands for "Robust File Copy," is a command-line utility in Windows that is used for advanced file and folder copying. It is more powerful and versatile than the basic copy command. Robocopy is included with Windows starting from Windows Vista and Windows Server 2008.
+Here are some details about the Robocopy command:
+
+    Use: Robocopy is used for copying files and directories with a wide range of options and features, including the ability to resume copies after interruptions and mirroring entire directory structures.
+
+    Syntax:
+        robocopy source destination [file(s)] [options]
+    
+        source: Specifies the source directory.
+        destination: Specifies the destination directory.
+        [file(s)]: Specifies the file or files to be copied (optional).
+        [options]: Specifies various options for customizing the copy operation (e.g., /E for copying subdirectories, /Z for restarting an interrupted copy).
+
+    Examples:
+        Copy a directory and its contents:
+            robocopy C:\SourceFolder D:\DestinationFolder /E
+        
+        Mirror a directory, copying only newer or changed files:
+            robocopy C:\SourceFolder D:\DestinationFolder /MIR
+
+    Additional Information:
+        Robocopy is known for its ability to handle large-scale file copy operations, and it is often used for backup and synchronization tasks.
+        It provides various options for controlling file attributes, copying security information, and retrying on failed copies.
+        Robocopy is a robust tool for maintaining identical copies of a set of files or directories on different locations.
+
+For a comprehensive list of options and additional details, you can use robocopy /? in the Command Prompt. The wide range of features and options makes Robocopy a powerful tool for file management and replication tasks.
