@@ -1,0 +1,22 @@
+The pause command in the Windows Command Prompt is used to make the Command Prompt wait for user input before proceeding with the execution of a batch file. When the pause command is encountered in a batch script, it displays the message "Press any key to continue..." and waits for the user to press a key.
+Here are the details:
+
+    Use: The pause command is used to insert a pause or wait for user input in a batch script.
+
+    Syntax:
+        pause
+    
+        When this command is encountered in a batch script, it prompts the user to press any key.
+
+    Example:
+        @echo off
+        echo This is a batch script.
+        pause
+        echo Script continued after pause.
+
+    Additional Information:
+        The pause command is often used in batch scripts to pause the execution of the script, allowing the user to review information or confirm an action before proceeding.
+        It is commonly used with the @echo off command to prevent echoing of the commands to the console.
+        Once the user presses any key, the script continues with the next command.
+
+The pause command is a simple but useful tool for batch script development, especially when user interaction or confirmation is needed.
