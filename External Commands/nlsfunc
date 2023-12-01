@@ -1,0 +1,20 @@
+nlsfunc loads country-specific information for national language support (NLS). It allows you to switch between different character sets and use country-specific features, such as date and time formats, currency symbols, and sorting rules.
+
+    Syntax:
+        nlsfunc [[drive:][path]filename]
+
+        filename: The name of the file containing country-specific information. This file is typically located in the LANG directory of the MS-DOS installation.
+
+    Examples:
+        nlsfunc a:\lang\Spain.dat: This command loads the country-specific information for Spain.
+    
+        nlsfunc c:\dos\nlsfunc.exe a:\lang\France.dat: This command loads the country-specific information for France.
+
+    Note:
+        The nlsfunc command should not be used while Windows is running. If you do so, your computer might stop responding.
+    
+        The nlsfunc command can also be used in the CONFIG.SYS file to automatically load country-specific information when you start your computer. To do this, add the following line to your CONFIG.SYS file:
+    
+        INSTALL=[[dos-drive:]dos-path]NLSFUNC.EXE [country-filename]
+        
+        Replace [dos-drive:]dos-path] with the location of NLSFUNC.EXE and [country-filename] with the name of the file containing country-specific information.
