@@ -1,0 +1,22 @@
+The ren command in the Windows Command Prompt is used to rename files or directories (folders). It stands for "rename."
+Here are the details:
+
+    Use: The ren command is used to rename a file or directory.
+
+    Syntax:
+        ren [old_name] [new_name]
+    
+        [old_name]: Specifies the current name of the file or directory.
+        [new_name]: Specifies the new name for the file or directory.
+    
+    Examples:
+        Rename a file:
+            ren oldfile.txt newfile.txt
+        
+        Rename a directory:
+            ren oldfolder newfolder
+
+Additional Information:
+    The ren command can be used to change the name of a file or directory in the same location.
+    It's important to provide the full or relative path to the file or directory you want to rename.
+    The ren command does not support wildcard characters (* or ?) for batch renaming multiple files. For that purpose, you might need to use a for loop or other methods.
