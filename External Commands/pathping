@@ -1,0 +1,32 @@
+The `pathping` command in the Windows Command Prompt is a network diagnostic tool that combines features of both the `ping` and `tracert` commands. It provides information about the path that network packets take to reach a destination, including detailed statistics about each hop along the route.
+Here are the details:
+
+- **Use:** The `pathping` command is used for network path analysis and troubleshooting. It sends a series of ICMP Echo or UDP Probes to each router or hop along the path to a destination, collecting statistics and information about each hop.
+
+- **Syntax:**
+  ```bash
+  pathping [-n] [-h maximum_hops] [-g host-list] [-p period] [-q num_queries] [-w timeout] destination
+  ```
+  - `-n`: Skip DNS resolution of target IP addresses to display numeric addresses only.
+  - `-h maximum_hops`: Maximum number of hops to search for the target.
+  - `-g host-list`: Loose source route along host-list (IPv4 only).
+  - `-p period`: Wait period milliseconds between pings (default is 250 ms).
+  - `-q num_queries`: Number of queries sent for each hop.
+  - `-w timeout`: Wait timeout milliseconds for each reply.
+
+- **Examples:**
+  - Perform a `pathping` to a destination:
+    ```bash
+    pathping www.example.com
+    ```
+  - Specify maximum hops and wait time:
+    ```bash
+    pathping -h 30 -w 500 www.example.com
+    ```
+
+- **Additional Information:**
+  - `pathping` can provide more detailed information than `tracert` by collecting additional statistics about each hop.
+  - It's particularly useful for identifying network issues and bottlenecks along the path to a destination.
+  - The `-g` option allows for specifying a loose source route, which can be helpful for troubleshooting certain network configurations.
+
+For more detailed information and options, you can use `pathping /?` in the Command Prompt. Keep in mind that certain network configurations or security policies might affect the results of `pathping` queries.
