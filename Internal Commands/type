@@ -1,0 +1,23 @@
+The type command in the Windows Command Prompt is used to display the contents of a text file. It simply outputs the text content of a file to the console.
+Here are the details:
+
+    Use: The type command is used to display the contents of a text file.
+
+    Syntax:
+        type [drive:][path]filename
+    
+        [drive:][path]filename: Specifies the path and name of the text file whose contents you want to display.
+
+    Examples:
+        Display the contents of a text file:
+            type C:\Example\sample.txt
+        
+        Display the contents of a text file in the current directory:
+            type sample.txt
+
+    Additional Information:
+        The type command is commonly used to quickly view the contents of small text files directly in the Command Prompt.
+        It's important to note that type may not be suitable for viewing large files, as it will attempt to display the entire content, potentially overwhelming the console.
+        If you need to view or manipulate larger files, you may want to consider using other commands or text editors better suited for such tasks.
+
+For more details and options, you can use type /? in the Command Prompt.
