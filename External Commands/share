@@ -1,0 +1,9 @@
+Use: The net share command in the Windows Command Prompt is used to display or configure shared resources on a computer.
+
+Syntax:
+    net share [sharename[=path]] [/users:number | /unlimited]
+
+Example:
+    net share MySharedFolder=C:\SharedFiles /users:5
+
+This example shares the folder "C:\SharedFiles" with the name "MySharedFolder" and limits the number of simultaneous users to 5.
