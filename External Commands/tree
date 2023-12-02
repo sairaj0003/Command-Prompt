@@ -1,0 +1,25 @@
+The tree command in the Windows Command Prompt is used to display the folder and file structure of a directory and its subdirectories in a tree-like format. It provides a hierarchical view of the directory structure, making it easier to understand the organization of files and folders.
+Here are the details:
+
+    Use: The tree command is used to display the directory structure in a tree format.
+
+    Syntax:
+        tree [drive:][path] [/F] [/A]
+    
+        [drive:][path]: Specifies the directory for which the tree structure should be displayed.
+        /F: Display the names of the files in each directory.
+        /A: Use ASCII characters to draw the tree lines.
+
+    Examples:
+        Display the tree structure for the current directory:
+            tree
+        
+        Display the tree structure for a specific directory with file names:
+            tree C:\Example /F
+
+    Additional Information:
+        The tree command is a useful tool for visualizing the hierarchy of files and directories in a given path.
+        By default, it displays the tree structure without file names. The /F option can be used to include file names in the output.
+        The /A option allows you to use ASCII characters to draw the tree lines, providing an alternative visual representation.
+
+For more details and options, you can use tree /? in the Command Prompt. The tree command is often used for quick assessments of directory structures, especially when you need to understand the layout of files and folders.
