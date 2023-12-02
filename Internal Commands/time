@@ -1,0 +1,31 @@
+The time command in the Windows Command Prompt is used to display or set the system time of the computer. It allows users to view the current system time and, if necessary, set a new time.
+Here are the details:
+
+    Use: The time command is used to display or set the system time.
+
+    Syntax:
+        time [/t | /p | /s]
+        time [hh:mm[:ss] [am | pm]]
+    
+        /t: Displays the current system time without prompting for a new time.
+        /p: Prompts the user to enter a new time.
+        /s: Displays the current system time and prompts the user to set a new time.
+        hh:mm[:ss]: Specifies the new time in hours, minutes, and optional seconds.
+        [am | pm]: Specifies whether the time is in the morning (am) or afternoon (pm).
+
+    Examples:
+        Display the current system time:
+            time
+        
+        Set a new system time using a 24-hour format:
+            time 14:30
+        
+        Set a new system time using a 12-hour format:
+            time 2:30 pm
+
+    Additional Information:
+        The time command is often used in scripts or batch files to automate time-related tasks.
+        If used without any arguments, it displays the current system time and prompts the user to enter a new time.
+        The system time is usually maintained by the operating system and synchronized with an external time source.
+
+For more details and options, you can use time /? in the Command Prompt. Keep in mind that setting the system time may require administrative privileges.
