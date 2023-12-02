@@ -1,0 +1,24 @@
+The telnet command is a network protocol used on the Internet or local area networks to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection. It allows a user to log into a remote computer, access resources on that computer, and run commands in a text-based interface.
+Here are the details:
+
+    Use: The telnet command is used to establish a Telnet session with a remote server or device.
+
+    Syntax:
+        telnet [hostname or IP address] [port]
+    
+        hostname or IP address: Specifies the destination host or IP address.
+        port: Specifies the port number to connect to (default is port 23 for Telnet).
+
+    Examples:
+        Connect to a remote server using Telnet:
+            telnet example.com
+        
+        Connect to a specific port on a remote server:
+            telnet example.com 80
+
+    Additional Information:
+        Telnet is a text-based protocol and is not secure for transmitting sensitive information. For secure communication, consider using SSH (Secure Shell).
+        Telnet is often used for troubleshooting network connectivity, testing services on remote servers, or configuring network devices.
+        On modern Windows systems, you may need to enable the Telnet Client feature via the "Turn Windows features on or off" settings.
+
+It's important to note that Telnet is an older protocol, and its use has decreased in favor of more secure alternatives like SSH. When possible, it is recommended to use SSH for secure remote access and communication.
