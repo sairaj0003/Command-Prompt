@@ -1,0 +1,12 @@
+The SYS command has different meanings and uses depending on the context. Here's a breakdown of its usage in different contexts:
+    1. SYS as a DOS Command:
+        In MS-DOS and early versions of Windows, the SYS command was used to copy system files from one disk to another, allowing the second disk to be bootable. The command syntax was:
+            SYS [source] d:
+            
+            Where [source] is the source disk or drive letter and d: is the destination drive letter.
+
+    2. SYS as a BASIC Command:
+        In Microsoft BASIC variants, the SYS command was used to execute a machine language program directly from memory. The command syntax was:
+            SYS n
+            
+            Where n is the memory address where the executable code begins.
