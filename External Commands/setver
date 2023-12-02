@@ -1,0 +1,21 @@
+The setver command in the Windows Command Prompt is used to set the MS-DOS version number that a program expects when it runs. It allows you to emulate a different version of MS-DOS for compatibility with older software.
+Here are the details:
+
+    Use: The setver command is used to set the MS-DOS version number for compatibility.
+
+    Syntax:
+        setver [drive:][path]program [version]
+    
+        [drive:][path]program: Specifies the path to the program for which you want to set the version number.
+        [version]: Specifies the MS-DOS version number (e.g., 6.22) that the program should emulate.
+
+    Examples:
+        Set the MS-DOS version for a specific program:
+            setver C:\OldProgram\Program.exe 6.22
+
+    Additional Information:
+        The setver command is used to address compatibility issues with older MS-DOS programs that may not run correctly on newer versions of MS-DOS or Windows.
+        By setting a specific version number for a program, you can emulate the MS-DOS environment it expects.
+        The setver command is not commonly used in modern Windows environments, as it primarily addresses compatibility concerns for older software.
+
+For more details and options, you can use setver /? in the Command Prompt. Keep in mind that this command is specific to certain legacy scenarios, and modern Windows versions might have more advanced compatibility modes and features.
