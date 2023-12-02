@@ -1,0 +1,21 @@
+The title command in the Windows Command Prompt is used to set the title of the Command Prompt window. It allows you to customize the title of the window to provide information or context about the tasks being performed.
+Here are the details:
+
+    Use: The title command is used to set the title of the Command Prompt window.
+
+    Syntax:
+        title [string]
+    
+        string: Specifies the text to be displayed as the title of the Command Prompt window.
+
+    Examples:
+        Set the title of the Command Prompt window to "My Custom Title":
+            title My Custom Title
+
+    Additional Information:
+        The title command is often used in batch scripts or command-line sessions to provide a more descriptive title for the Command Prompt window.
+        The specified title text will be displayed in the title bar of the Command Prompt window.
+        It's useful for differentiating between multiple Command Prompt windows or for providing context about the tasks being performed.
+        To clear the title and revert to the default, you can use title with no arguments or provide an empty string as the title.
+
+For more details and options, you can use title /? in the Command Prompt. The title command is a simple but handy feature for customizing the appearance of the Command Prompt window.
