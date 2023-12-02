@@ -1,0 +1,28 @@
+In Command Prompt (cmd), switches are options that modify the behavior of a command. They are typically represented by a single letter preceded by a forward slash (/). For instance, the dir command can be used to list the contents of a directory. By adding switches to the dir command, you can control how the directory listing is displayed.
+
+Here's an example of how to use switches with the dir command:
+    dir /w
+
+    In this example, the /w switch tells the dir command to display the directory listing in a wide format, so that file names and extensions are aligned in columns.
+
+Here are some common switches used with various commands in cmd:
+
+    /? or /help: Displays help information for the command.
+
+    /q: Suppresses the display of non-essential information.
+
+    /v: Provides verbose output, displaying additional details about the command's operation.
+
+    /o: Specifies the output format. For example, /o:NUL redirects output to the null device, effectively silencing the command.
+
+    /i or /case-insensitive: Ignores case sensitivity when comparing file names and paths.
+
+    /s: Recursively searches subdirectories for files and folders.
+
+    /a or /attributes: Displays file attributes, such as read-only or hidden.
+
+    /d or /date: Displays file creation or modification dates.
+
+    /t or /time: Displays file creation or modification times.
+
+Remember that the specific switches available for each command may vary. To see the available switches for a particular command, use the /help or /? switch.
