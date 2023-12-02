@@ -1,0 +1,25 @@
+The tracert command, short for "traceroute," is used in the Windows Command Prompt to trace the route that packets take to reach a destination on a network. It helps to identify the network path, latency, and potential issues between the source and destination.
+Here are the details:
+
+    Use: The tracert command is used to trace the route that packets take to reach a destination.
+
+    Syntax:
+        tracert [options] [hostname or IP address]
+    
+        [hostname or IP address]: Specifies the destination host or IP address.
+        [options]: Various options that modify the behavior of the tracert command.
+
+    Examples:
+        Trace the route to a specific website:
+            tracert www.example.com
+        
+        Trace the route to a specific IP address:
+            tracert 203.0.113.1
+
+    Additional Information:
+        tracert sends a sequence of Internet Control Message Protocol (ICMP) Echo Request messages to the destination with increasing Time-To-Live (TTL) values.
+        Each router or hop along the path decrements the TTL, and when the TTL reaches zero, the router sends an ICMP Time Exceeded message back to the source.
+        The output of tracert includes the IP addresses of each router or hop, along with round-trip times (latency).
+        tracert is a valuable tool for diagnosing network connectivity issues, identifying bottlenecks, and understanding the network path to a specific destination.
+
+For more details and options, you can use tracert /? in the Command Prompt. Note that the availability and behavior of tracert may vary on different operating systems and network environments.
