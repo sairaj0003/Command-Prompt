@@ -1,0 +1,25 @@
+The subst command in the Windows Command Prompt is used to associate a drive letter with a specific folder on a local or network drive. It allows you to create a virtual drive letter that points to a specific path, making it convenient to access frequently used directories.
+Here are the details:
+
+    Use: The subst command is used to create a virtual drive letter that points to a specific folder.
+
+    Syntax:
+        subst [drive1: [drive2:]path]
+    
+        drive1:: Specifies the virtual drive letter to be created.
+        [drive2:]path: Specifies the target folder that the virtual drive letter will point to.
+
+    Examples:
+        Create a virtual drive letter "Z:" pointing to the folder "C:\MyFolder":
+            subst Z: C:\MyFolder
+        
+        Remove the virtual drive letter "Z:":
+            subst Z: /D
+
+    Additional Information:
+        The subst command is useful for creating virtual drives to access specific directories more conveniently.
+        Virtual drives created with subst are temporary and exist only for the current session. They are removed when the computer restarts.
+        To make virtual drives persistent across reboots, you can use the subst command in a script that runs at startup or use other methods like modifying the system registry.
+        It's important to note that while subst can be a convenient tool, it's not as commonly used in modern Windows environments, as mapped network drives and shortcuts are often preferred.
+
+For more details and options, you can use subst /? in the Command Prompt. The subst command is a legacy command that may still be useful in certain scenarios, especially for specific file and directory access patterns.
