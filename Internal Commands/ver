@@ -1,0 +1,20 @@
+The ver command in the Windows Command Prompt is used to display the version number of the operating system. It provides information about the Windows version that is currently running.
+Here are the details:
+
+    Use: The ver command is used to display the version number of the operating system.
+
+    Syntax:
+        ver
+
+    Example:
+        ver
+
+    Additional Information:
+        Running the ver command will display a line indicating the Windows version and build number. For example, it might display something like "Microsoft Windows [Version 10.0.19042]."
+        The version number includes information about the major version, minor version, build number, and other details.
+        It is a quick way to check the Windows version from the Command Prompt.
+
+    For more detailed version information, you can also use the systeminfo command in the Command Prompt.
+        systeminfo
+        
+        This command provides extensive information about the operating system, including the version, build, and installation date.
