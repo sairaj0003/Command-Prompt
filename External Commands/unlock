@@ -1,0 +1,6 @@
+Unlocking a BitLocker-protected drive
+
+If you have a BitLocker-protected drive, you can use the manage-bde command to unlock it. To do this, open CMD and type the following command:
+    manage-bde unlock <drive letter> -pw
+
+    Replace <drive letter> with the drive letter of the BitLocker-protected drive you want to unlock. You will then be prompted to enter your BitLocker password.
