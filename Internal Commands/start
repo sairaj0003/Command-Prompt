@@ -1,0 +1,35 @@
+The start command in the Windows Command Prompt is used to open a new Command Prompt window or launch a new process or program. It allows you to start a new application or command in a separate window or, optionally, with specific settings.
+Here are the details:
+
+    Use: The start command is used to launch a new process, application, or command.
+
+    Syntax:
+        start ["title"] [/D path] [/I] [/MIN] [/MAX] [/SEPARATE | /SHARED] [/LOW | /NORMAL | /HIGH | /REALTIME | /ABOVENORMAL | /BELOWNORMAL] [/WAIT] [/B] [command/program] [parameters]
+    
+        "title": Specifies the title for the new Command Prompt window.
+        /D path: Specifies the startup directory for the new process.
+        /I: Starts the new process in a new window.
+        /MIN: Minimizes the new window.
+        /MAX: Maximizes the new window.
+        /SEPARATE or /SHARED: Specifies whether the environment is separate or shared.
+        /LOW, /NORMAL, /HIGH, /REALTIME, /ABOVENORMAL, /BELOWNORMAL: Specifies the priority class of the new process.
+        /WAIT: Causes the Command Prompt to wait for the process to complete before continuing.
+        /B: Starts the new process without creating a new window.
+
+    Examples:
+        Open a new Command Prompt window:
+            start
+        
+        Open Notepad in a new window:
+            start notepad
+        
+        Open a new Command Prompt window with a specific title:
+            start "My Custom Title"
+
+    Additional Information:
+        The start command is versatile and can be used to launch various types of processes, applications, or commands.
+        It is commonly used in batch scripts to initiate parallel processes or open new windows for different tasks.
+        The /WAIT option is useful when you want the Command Prompt to wait for the new process to finish before continuing with the script.
+        The /B option is used to start the process without creating a new window. This can be handy for running background tasks.
+
+For more details and options, you can use start /? in the Command Prompt. The start command is a useful tool for managing and automating processes from the command line.
