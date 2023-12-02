@@ -1,0 +1,33 @@
+The sort command in the Windows Command Prompt is used to sort the contents of a text file or the output of a command. It arranges lines of text alphabetically or numerically, depending on the specified options.
+Here are the details:
+
+    Use: The sort command is used for sorting text.
+
+    Syntax:
+        sort [/r] [/m] [/l] [/n] [/rec] [/+n] [/o output] [input]
+    
+        /r: Reverses the sort order.
+        /m: Specifies that the input should be sorted in memory.
+        /l: Forces the input to be sorted in lowercase.
+        /n: Specifies a numeric sort.
+        /rec: Specifies the number of characters in each record.
+        /+n: Specifies the starting character position for the sort key.
+        /o output: Specifies the file where the sorted input is to be stored.
+
+    Examples:
+        Sort the contents of a text file alphabetically:
+            sort input.txt
+        
+        Sort the contents of a text file in reverse order:
+            sort /r input.txt
+        
+        Sort the output of a command numerically:
+            dir /b | sort /n
+
+    Additional Information:
+        The sort command is useful for organizing text data in a desired order.
+        By default, sort arranges text in ascending order. The /r option can be used to reverse the sort order.
+        The /n option is used for numeric sorting, while the /l option forces sorting in lowercase.
+        If no input file is specified, sort reads from the standard input (keyboard or pipeline).
+
+For more details and options, you can use sort /? in the Command Prompt. The sort command is commonly used in batch scripts and command-line operations where data needs to be organized or processed in a specific order.
