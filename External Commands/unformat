@@ -1,0 +1,13 @@
+The unformat command is a DOS command that was used to attempt to recover files from a disk that had been formatted using the unformat command. It was included in MS-DOS versions 5.0 to 6.22. However, it is important to note that the unformat command was not always successful in recovering files, and it could overwrite existing data on the disk, making it impossible to recover any files.
+
+    Syntax:
+        unformat [drive:][/partn][/l][/p][/u]
+    
+        drive:: Specifies the drive letter of the drive that you want to unformat.
+        /partn: Specifies that the drive has a partition table.
+        /l: Specifies that there is no MIRROR file for the drive.
+        /p: Sends UNFORMAT messages to the printer.
+        /u: Prevents the automatic verification of the MIRROR file.
+
+    Example: To unformat drive C: and send the messages to the printer, you would use the following command:
+        unformat C: /p
