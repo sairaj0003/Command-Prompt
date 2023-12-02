@@ -1,0 +1,16 @@
+The undelete command is a DOS command that can be used to recover deleted files from a FAT or FAT32 filesystem. However, it is important to note that the undelete command is not always successful, and it is more likely to work if the files were only recently deleted and no new files have been written to the disk since the deletion.
+
+    Use: To use the undelete command, you will need to know the name of the file you want to recover, as well as the drive letter of the disk it was on. 
+
+    Syntax:
+        undelete [drive:][path][filename] [/DT|/DS|/DOS]
+
+    Here are the options:
+        /DT: Specifies that the file should be recovered using the Delete Tracker.
+        /DS: Specifies that the file should be recovered using the Disk Signature method.
+        /DOS: Specifies that the file should be recovered using the DOS method.
+
+    Example: To recover a file named mydocument.txt from the C drive, you would use the following command:
+        undelete C:\mydocument.txt
+
+If the file was recently deleted and no new files have been written to the disk, the undelete command should be able to recover the file. However, if the file was deleted a long time ago or if new files have been written to the disk, the undelete command may not work.
