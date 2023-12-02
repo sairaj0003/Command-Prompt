@@ -1,0 +1,35 @@
+The shift command in the Windows Command Prompt is used to shift the position of parameters in a batch script or a batch file. It is particularly useful when dealing with command-line arguments or parameters passed to a script or function.
+Here are the details:
+
+    Use: The shift command is used to shift the position of command-line parameters in a script, effectively discarding the value of the first parameter and moving the remaining parameters one position to the left.
+
+    Syntax:
+        shift
+        
+        The shift command is used without any arguments.
+    
+    Example:
+        @echo off
+        echo First Parameter: %1
+        echo Second Parameter: %2
+        shift
+        echo After Shift:
+        echo First Parameter: %1
+        echo Second Parameter: %2
+
+    Additional Information:
+        The shift command is commonly used in batch scripts where command-line parameters need to be processed in a loop.
+        After executing shift, the value of %1 is discarded, and the value of %2 becomes the new %1, %3 becomes the new %2, and so on.
+        This allows scripts to iterate through a variable number of parameters without knowing the exact count in advance.
+
+    Here's a simple example of how shift can be used in a batch script:
+        @echo off
+        :process_params
+        if "%1"=="" goto :end
+        echo Processing Parameter: %1
+        shift
+        goto :process_params
+        :end
+        echo End of Parameter Processing
+
+        In this example, the script processes each parameter until there are no more parameters left, and the :end label is reached. The shift command is used to move through the parameters one at a time.
