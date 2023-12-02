@@ -1,0 +1,32 @@
+The smartdrv command is a disk caching utility that was used in MS-DOS and early versions of Microsoft Windows. It is designed to improve disk I/O performance by caching frequently accessed data in RAM (Random Access Memory). This can lead to faster access times for files and applications.
+Here are the details:
+
+    Use: The smartdrv command is used to install and configure the SmartDrive disk cache.
+
+    Syntax:
+        smartdrv [/x] [/L] [/U] [/B] [/E] [/C]
+    
+        /x: Disables SmartDrive caching.
+        /L: Limits the amount of conventional memory used by SmartDrive.
+        /U: Updates the cached data when the computer is idle.
+        /B: Enables write-back caching (data is written to the cache and disk simultaneously).
+        /E: Forces SmartDrive to use extended memory for its cache.
+        /C: Clears the SmartDrive cache.
+
+    Examples:
+        Install SmartDrive with default settings:
+            smartdrv
+        
+        Install SmartDrive and limit conventional memory usage:
+            smartdrv /L
+        
+        Disable SmartDrive caching:
+            smartdrv /x
+
+    Additional Information:
+        SmartDrive was commonly used in MS-DOS and early versions of Windows to improve disk performance, especially on systems with slower hard drives.
+        The cache was stored in conventional or extended memory, depending on the configuration.
+        Use caution when using disk caching utilities, as inappropriate configurations or conflicts with certain applications could lead to data corruption.
+        With the evolution of operating systems and improvements in disk access, the need for separate disk caching utilities like SmartDrive has diminished.
+
+For more details and options, you can use smartdrv /? in the Command Prompt. Note that this command is specific to older MS-DOS and Windows environments and is not typically used in modern Windows operating systems.
